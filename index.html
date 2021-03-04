@@ -7,9 +7,79 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 </head>
 
 <body>
+	<div class="swiper-container" id="pageSwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="t-index-top"></div>
+			</div>
+			<div class="swiper-slide">
+				<div>
+					<div class="g-flex">
+						<div class="t-index-content-big-img-box">
+							<img src="images/index-top.jpg" class="t-normal-img">
+						</div>
+						<div class="t-index-content-news-box">
+							<div class="t-index-content-news-title">品牌资讯</div>
+							<div class="t-index-content-news-list">
+								<div class="g-flex g-flex-items-center">
+									<div class="t-index-content-news-info">
+										十月结晶入选十月结晶入选十月结晶入选
+									</div>
+									<img src="images/" class="t-index-content-news-icon">
+								</div>
+								<div class="t-index-content-news-hide">
+									<img src="images/index-top.jpg" class="t-normal-img">
+								</div>
+							</div>
+							<div class="t-index-content-news-list">
+								<div class="g-flex g-flex-items-center">
+									<div class="t-index-content-news-info">
+										十月结晶入选十月结晶入选十月结晶入选
+									</div>
+									<img src="images/" class="t-index-content-news-icon">
+								</div>
+							</div>
+							<div class="t-index-content-news-list">
+								<div class="g-flex g-flex-items-center">
+									<div class="t-index-content-news-info">
+										十月结晶入选十月结晶入选十月结晶入选
+									</div>
+									<img src="images/" class="t-index-content-news-icon">
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="t-index-content-swiper">
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="swiper-slide">slider3</div>
+			<div class="swiper-slide">slider3</div>
+		</div>
+	</div>
+	
+	<!-- <img src="images/index-top.jpg" class="t-index-top-img"> -->
+	<!-- <div class="t-index-banner"></div> -->
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+		
+	    var mySwiper = new Swiper('#pageSwiper', {
+			direction : 'vertical',
+			mousewheel: true,
+			speed:800,
+			delay:3000
+		})
+    
+	</script>
 </body>
-
+	
 </html>
