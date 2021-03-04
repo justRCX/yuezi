@@ -9,3 +9,12 @@ body {
   display: -webkit-flex;
   display: flex;
 }
+
+.g-center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.g-white {
+  background: #fff;
+}
