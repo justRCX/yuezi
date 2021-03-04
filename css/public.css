@@ -18,3 +18,15 @@ body {
 .g-white {
   background: #fff;
 }
+
+.g-overflow-hidden {
+  overflow: hidden;
+}
+
+.g-left {
+  float: left;
+}
+
+.g-right {
+  float: right;
+}
