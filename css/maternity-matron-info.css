@@ -5,25 +5,48 @@
 .g-center {
   position: relative;
   padding-left: 139px;
+  padding-top: 63px;
+  box-sizing: border-box;
 }
 
 .t-position-left {
   position: absolute;
-  top: 0;
+  top: 63px;
   bottom: 0;
   left: 0;
   width: 207px;
 }
 
 .t-position-left .t-header-img {
-  width: 207px;
-  height: 207px;
+  position: relative;
+  width: 209px;
+  height: 209px;
   border: 2px solid #F8CEC0;
   border-radius: 50%;
   overflow: hidden;
   position: absolute;
   z-index: 3;
 }
+
+
+.t-header-img img {
+  width: 100%;
+  display: block;
+}
+
+/* .t-position-left .t-header-img::after {
+  content: '';
+  display: block;
+  width: 207px;
+  height: 207px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 2px #F8CEC0 solid;
+  border-left: 2px #F8CEC0 solid;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+} */
 
 .t-position-left::after {
   content: '';
@@ -43,7 +66,297 @@
   -o-transform: translateX(-50%);
 }
 
-.t-header-img img {
-  width: 100%;
+
+
+.t-base-info {
+  padding-left: 110px;
+  padding-bottom: 97px;
+  border-bottom: 1px solid #A7A7A7;
+}
+
+.t-base-info .t-left {
+  border-right: 1px solid #A7A7A7;
+  width: 560px;
+
+}
+
+.t-base-info-name {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #1C1C1C;
+  margin-bottom: 40px;
+}
+
+.t-base-info-name span {
   display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 22px;
+  height: 22px;
+  background: #DCBA95;
+  border-radius: 11px;
+  padding: 0 10px;
+  margin-left: 11px;
+}
+
+.t-base-info-list .item {
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1C1C1C;
+  line-height: 28px;
+  overflow: hidden;
+  margin-right: 40px;
+}
+
+.t-base-info-list .item::before {
+  content: '';
+  display: block;
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin-right: 6px;
+}
+
+.t-base-info-list .age::before {
+  background: url('../images/maternity-matron-info/age.png');
+  background-size: contain;
+  background-position: center center;
+}
+
+.t-base-info-list .experience::before {
+  background: url('../images/maternity-matron-info/experience.png');
+  background-size: contain;
+  background-position: center center;
+}
+
+.t-base-info-list .address::before {
+  background: url('../images/maternity-matron-info/address.png');
+  background-size: contain;
+  background-position: center center;
+}
+
+.t-base-info-certificate {
+  position: relative;
+  text-indent: -47px;
+  padding-left: 82px;
+  width: 452px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #1C1C1C;
+  line-height: 30px;
+  margin-top: 35px;
+}
+
+.t-base-info-certificate::before {
+  content: '';
+  width: 28px;
+  left: 0;
+  height: 28px;
+  display: block;
+  position: absolute;
+  background: url('../images/maternity-matron-info/certificate.png');
+  background-size: 28px;
+  background-position: center center;
+}
+
+.t-base-info .t-right {
+  width: 385px;
+}
+
+.t-base-info .t-right ul {
+  width: 210px;
+  margin: 0 auto;
+}
+
+.t-base-info .t-right li {
+  float: left;
+  width: 100px;
+  margin-bottom: 15px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #A7A7A7;
+  border-radius: 15px;
+}
+
+.t-base-info .t-right li:nth-child(odd) {
+  margin-right: 3px;
+}
+
+
+.t-detail-info {
+  border-bottom: 1px solid #A7A7A7;
+  margin-top: 33px;
+  padding-bottom: 79px;
+}
+
+.t-title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2C2C2C;
+  line-height: 30px;
+  padding-left: 49px;
+}
+
+.t-title::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  display: block;
+  width: 49px;
+  height: 30px;
+}
+
+.t-detail-info .t-title::before {
+  background: url('../images/maternity-matron-info/info.png') no-repeat;
+  background-position: left center;
+  background-size: 31px;
+}
+
+.t-detail-info {
+  position: relative;
+}
+
+.t-detail-info ul {
+  overflow: hidden;
+  width: 490px;
+  padding-left: 48px;
+  margin-top: 74px;
+}
+
+.t-detail-info li {
+  float: left;
+  width: 245px;
+  margin-bottom: 22px;
+}
+
+.t-detail-info .item-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #967B5E;
+  line-height: 30px;
+}
+
+.t-detail-info .item-text span {
+  color: #2C2C2C;
+}
+
+.t-detail-info p.item-text {
+  padding-left: 108px;
+  text-indent: -60px;
+  max-width: 685px;
+}
+
+.t-detail-info-qrcode {
+  position: absolute;
+  top: 95px;
+  right: 106px;
+  width: 150px;
+}
+
+.t-detail-info-qrcode img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.t-detail-info-qrcode p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1C1C1C;
+  line-height: 30px;
+}
+
+.t-detail-info .t-appointment {
+  width: 100px;
+  height: 26px;
+  background: #DCBA95;
+  border-radius: 13px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 25px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.t-certificate {
+  margin-top: 26px;
+  padding-bottom: 66px;
+  border-bottom: 1px solid #A7A7A7;
+}
+
+.t-certificate .t-title::before {
+  background: url('../images/maternity-matron-info/certificate.png') no-repeat;
+  background-position: left center;
+  background-size: 29px;
+}
+
+.t-certificate-imgs {
+  overflow: hidden;
+  margin-top: 58px;
+  padding-bottom: 37px;
+}
+
+.t-certificate-imgs li {
+  padding: 0 44px;
+  float: left;
+  margin-bottom: 54px;
+  border-right: 1px solid #A7A7A7;
+}
+
+.t-certificate-imgs li:nth-child(4n) {
+  border-right: none;
+}
+
+.t-certificate-imgs li .img-box {
+  width: 175px;
+  height: 142px;
+  overflow: hidden;
+}
+
+.t-certificate-imgs .img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.t-certificate .t-no-icon::before {
+  display: none;
+}
+
+.t-certificate .t-no-icon {
+  padding-left: 44px;
+}
+
+.t-certificate .t-score {
+  margin-top: 21px;
+  margin-bottom: 25px;
+  padding-left: 44px;
+}
+
+.t-certificate .t-normal-text {
+  font-size: 18px;
+  font-weight: normal;
+  color: #2C2C2C;
+  line-height: 41px;
+}
+
+.t-score-list {
+  padding-left: 44px;
+  width: 580px;
+}
+
+.t-score-list li {
+  width: 180px;
+  overflow: hidden;
+  float: left;
+  margin-right: 110px;
 }

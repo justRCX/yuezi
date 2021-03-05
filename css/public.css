@@ -10,6 +10,25 @@ body {
   display: flex;
 }
 
+.g-flex-ac {
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  box-align: center;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+}
+
+.g-flex-jc {
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -moz-box-pack: center;
+  -webkit--moz-box-pack: center;
+  box-pack: center;
+
+}
+
 .g-center {
   width: 1200px;
   margin: 0 auto;
@@ -29,4 +48,10 @@ body {
 
 .g-right {
   float: right;
+}
+
+.g-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
 }
