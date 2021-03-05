@@ -19,7 +19,7 @@
 				<div class="t-index-top"></div>
 			</div>
 			<div class="swiper-slide">
-				<div>
+				<div class="g-flex-y g-flex-justify-center g-flex-items-center">
 					<div class="g-flex">
 						<div class="t-index-content-big-img-box">
 							<img src="images/index-top.jpg" class="t-normal-img">
@@ -57,13 +57,102 @@
 						</div>
 					</div>
 					<div class="t-index-content-swiper">
-						
+						<div class="swiper-container swiper-no-swiping" id="brandSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="t-index-brand-list">
+										<div class="t-index-brand-box">
+											<img src="images/index-top.jpg" class="t-normal-img">
+										</div>
+										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="t-index-brand-list">
+										<div class="t-index-brand-box">
+											<img src="images/index-top.jpg" class="t-normal-img">
+										</div>
+										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="t-index-brand-list">
+										<div class="t-index-brand-box">
+											<img src="images/index-top.jpg" class="t-normal-img">
+										</div>
+										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="t-index-brand-list">
+										<div class="t-index-brand-box">
+											<img src="images/index-top.jpg" class="t-normal-img">
+										</div>
+										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="t-index-brand-list">
+										<div class="t-index-brand-box">
+											<img src="images/index-top.jpg" class="t-normal-img">
+										</div>
+										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev t-index-brand-prev"><</div>
+						<div class="swiper-button-next t-index-brand-next">></div>
 					</div>
-					
 				</div>
 			</div>
-			<div class="swiper-slide">slider3</div>
-			<div class="swiper-slide">slider3</div>
+			<div class="swiper-slide">
+				<div class="t-index-pro-box">
+					<div class="">
+						<div class="t-index-pro-list">妈妈用品</div>
+						<div class="t-index-pro-list">宝宝用品</div>
+						<div class="t-index-pro-list">月子产康</div>
+						<div class="t-index-pro-list">月嫂服务</div>
+					</div>
+					<div class="t-index-pro-img">
+						<img src="images/index-top.jpg" class="t-normal-img">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide t-index-footer-slide" style="height: 500px">
+				<div class="t-index-footer-box">
+					<div class="t-index-footer-top">
+						<div class="t-index-footer-pro-list">月子会所</div>
+						<div class="t-index-footer-pro-list">产后康复</div>
+						<div class="t-index-footer-pro-list">月嫂服务</div>
+						<div class="t-index-footer-pro-list">生态加盟</div>
+					</div>
+					<div class="t-index-footer-content">
+						<div class="t-index-footer-content-contact"><img src="images/index/phone.png" class="t-index-footer-content-icon"> 0571-28238888</div>
+						<div class="t-index-footer-content-contact"><img src="images/index/location.png" class="t-index-footer-content-icon"> 西湖区文二西路777号西溪湿地公园</div>
+						<div class="t-index-footer-content-contact"><img src="images/index/mail.png" class="t-index-footer-content-icon"> shiyuer.com</div>
+					</div>
+					<div class="t-index-footer-bottom">
+						<div class="t-index-footer-logo">
+							<img src="images/index-top.jpg" class="t-normal-img">
+						</div>
+						<div class="t-index-footer-info">
+							<p>浙江施俞儿实业有限公司</p>
+							<p>浙ICP备20003207号-1 Copyright c 2019-2020</p>
+							<p>官方热线：400-826-3635  0571-89806400</p>
+							<p>官方网址：http://www.shiyuejiejing.com</p>
+						</div>
+						<div class="g-flex">
+							<div class="t-index-footer-code">
+								<img src="images/index-top.jpg" class="t-normal-img">
+							</div>
+							<div class="t-index-footer-code">
+								<img src="images/index-top.jpg" class="t-normal-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -72,12 +161,24 @@
 	<script type="text/javascript" src="js/swiper.min.js"></script>
 	<script type="text/javascript">
 		
-	    var mySwiper = new Swiper('#pageSwiper', {
+	    var pageSwiper = new Swiper('#pageSwiper', {
 			direction : 'vertical',
 			mousewheel: true,
 			speed:800,
-			delay:3000
+			delay:3000,
+			slidesPerView: 'auto',
 		})
+
+
+		var brandSwiper = new Swiper('#brandSwiper', {
+			slidesPerView: 4,
+			spaceBetween: 24,
+			navigation: {
+		        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		      }
+		});
+  
     
 	</script>
 </body>
