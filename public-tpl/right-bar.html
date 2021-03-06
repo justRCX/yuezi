@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/headerFooter.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+  <div class="right-bar">
+    <ul>
+      <li class="g-flex g-flex-ac">
+        <div class="box">
+          <img src="../images/wechat.png" alt="">
+          微信留言
+        </div>
+      </li>
+      <li class="g-flex g-flex-ac">
+        <div class="box">
+          <img src="../images/phone.png" alt="">
+          在线客服
+        </div>
+      </li>
+      <li class="g-flex g-flex-ac" id="toTop">
+        <div class="box">
+          <img src="../images/top.png" alt="">
+          返回顶部
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    $('#toTop').click(function() {
+      $("html,body").animate({ scrollTop: 0 }, 100);
+    })
+
+  </script>
+</body>
+
+</html>
