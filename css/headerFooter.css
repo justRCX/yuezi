@@ -117,6 +117,7 @@
   right: 127px;
   bottom: 100px;
   width: 90px;
+  z-index: 99;
 }
 
 .right-bar li {
