@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="./css/public.css">
 		<link rel="stylesheet" href="./css/headerFooter.css" />
 		<link rel="stylesheet" href="./css/list.css">
+		<script src="./js/jquery.js"></script>
 		<script src='./js/city.js'></script>
 		<script type="text/javascript">
 			window.onload = function() {
@@ -31,6 +32,11 @@
 
 					}
 				}
+				$('#toTop').click(function() {
+					$("html,body").animate({
+						scrollTop: 0
+					}, 100);
+				})
 			}
 		</script>
 	</head>
@@ -89,7 +95,7 @@
 					</div>
 				</div>
 				<div class='g-teachers'>
-					<div class='g-overflow-hidden g-teachers-item'>
+					<a target="_blank" href='maternity-matron-info.html' class='g-overflow-hidden g-teachers-item hover-btn'>
 						<img src='images/list/p1.png' class='g-left g-teacher-pic' />
 						<div class='g-left g-teacher-info'>
 							<div class='g-teacher-top g-overflow-hidden'>
@@ -123,8 +129,8 @@
 							<div class='g-label g-left'>态度诚恳</div>
 							<div class='g-label g-left'>经验丰富</div>
 						</div>
-					</div>
-					<div class='g-overflow-hidden g-teachers-item'>
+					</a>
+					<a target="_blank" href='maternity-matron-info.html' class='g-overflow-hidden g-teachers-item hover-btn'>
 						<img src='images/list/p2.png' class='g-left g-teacher-pic' />
 						<div class='g-left g-teacher-info'>
 							<div class='g-teacher-top g-overflow-hidden'>
@@ -157,8 +163,41 @@
 							<div class='g-label g-left'>善于沟通</div>
 							<div class='g-label g-left'>态度诚恳</div>
 						</div>
-					</div>
+					</a>
+					<a target="_blank" href='maternity-matron-info.html' class='g-overflow-hidden g-teachers-item hover-btn'>
+						<img src='images/list/p2.png' class='g-left g-teacher-pic' />
+						<div class='g-left g-teacher-info'>
+							<div class='g-teacher-top g-overflow-hidden'>
+								<div class='g-teacher-name g-left'>张老师</div>
+								<div class='g-teacher-des g-left'>全天上户</div>
+							</div>
+							<div class='g-teacher-center g-overflow-hidden'>
+								<div class='teacher-info-con g-left'><img src='./images/maternity-matron-info/age.png'
+										class='inlineblock-img' />47岁</div>
+								<div class='teacher-info-con g-left'><img
+										src='./images/maternity-matron-info/experience.png'
+										class='inlineblock-img' />7年经验</div>
+								<div class='teacher-info-con g-left'><img
+										src='./images/maternity-matron-info/address.png' class='inlineblock-img' />湖北人
+								</div>
+							</div>
+							<div class='g-teacher-bottom g-overflow-hidden'>
+								<div class='g-left teacher-info-con certificate-left'><img
+										src='./images/maternity-matron-info/certificate.png'
+										class='inlineblock-img' />证书:</div>
+								<div class='g-left certificate-right'>健康证 <span>I</span> 母婴护理证 <span>I</span> 小儿推拿证
+									<span>I</span> 催乳师证 <span>I</span> 心理咨询证 <span>I</span> 月子餐烹饪证
+								</div>
 
+							</div>
+						</div>
+						<div class='g-left g-label-box'>
+							<div class='g-label g-left'>责任心强</div>
+							<div class='g-label g-left'>做事积极</div>
+							<div class='g-label g-left'>善于沟通</div>
+							<div class='g-label g-left'>态度诚恳</div>
+						</div>
+					</a>
 				</div>
 				<div class='appointment-btn hover-btn'>立即预约</div>
 			</div>
@@ -168,7 +207,7 @@
 		<!-- 尾巴自己引 -->
 		<div class='footer'>
 			<div class='footer-top-box'>
-				<div class='footer-top g-center '>
+				<div class='footer-top footer-center '>
 					<div class='footer-top-text'><a href='lili-club-list.html'>月子会所</a><span class='line'>丨</span><a
 							href='post-birth-list.html'>产后康复</a><span class='line'>丨</span><a
 							href='maternity-matron-list.html'>月嫂服务</a><span class='line'>丨</span><a
@@ -183,12 +222,32 @@
 				</div>
 			</div>
 			<div class='footer-bottom-box'>
-				<div class='footer-bottom g-center'>
+				<div class='footer-bottom footer-center'>
 					<div class='footer-company'>浙江施俞儿实业有限公司</div>
 					<div class='footer-company-beian'>浙ICP备20003207号-1 Copyright c 2019-2020</div>
 				</div>
 			</div>
 		</div>
+		<ul class="right-bar">
+			<li class="g-flex g-flex-ac">
+				<div class="box">
+					<img src="./images/wechat.png" alt="">
+					微信留言
+				</div>
+			</li>
+			<li class="g-flex g-flex-ac">
+				<div class="box">
+					<img src="./images/phone.png" alt="">
+					在线客服
+				</div>
+			</li>
+			<li class="g-flex g-flex-ac" id="toTop">
+				<div class="box">
+					<img src="./images/top.png" alt="">
+					返回顶部
+				</div>
+			</li>
+		</ul>
 	</body>
 
 </html>

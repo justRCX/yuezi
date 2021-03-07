@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="./css/headerFooter.css" />
 		<link rel="stylesheet" href="./css/list.css">
 		<script src='./js/city.js'></script>
+		<script src="./js/jquery.js"></script>
 		<script type="text/javascript">
 			window.onload = function() {
 				var citys = pro_city_data.citylist;
@@ -30,6 +31,12 @@
 						}
 					}
 				}
+				$('#toTop').click(function() {
+					$("html,body").animate({
+						scrollTop: 0
+					}, 100);
+				})
+
 			}
 		</script>
 	</head>
@@ -37,7 +44,7 @@
 	<body>
 		<!-- 头自己引一下 -->
 		<div class='header'>
-			<div class='header-content g-center g-overflow-hidden'>
+			<div class='header-content footer-center g-overflow-hidden'>
 				<img src="./images/hearder-logo.png" class="g-left block-img header-logo">
 				<div class='header-item g-left'>
 					<a href='javascript:void(0)' class='header-text'>首页</a>
@@ -83,54 +90,54 @@
 					</div>
 				</div>
 				<div class='g-liliclub g-overflow-hidden'>
-					<div class='g-liliclub-item g-left'>
+					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
 						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
 						</div>
 						<div class='g-liliclub-name g-ellipsis'>十月结晶#逸庭月子会所 NO.001</div>
 						<div class='g-liliclub-add g-ellipsis'>上海市浦东新区世纪大道210号</div>
 						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
 							5257</div>
-					</div>
-					<div class='g-liliclub-item g-left'>
+					</a>
+					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
 						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
 						</div>
 						<div class='g-liliclub-name g-ellipsis'>十月结晶#芮庭月子会所 NO.001</div>
 						<div class='g-liliclub-add g-ellipsis'>上海市杨浦区闸殷路513号</div>
 						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
 							5257</div>
-					</div>
-					<div class='g-liliclub-item g-left'>
+					</a>
+					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
 						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
 						</div>
 						<div class='g-liliclub-name g-ellipsis'>十月结晶#产后恢复中心 NO.001</div>
 						<div class='g-liliclub-add g-ellipsis'>上海市浦东新区世博大道168号2楼</div>
 						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
 							5257</div>
-					</div>
-					<div class='g-liliclub-item g-left'>
+					</a>
+					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
 						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
 						</div>
 						<div class='g-liliclub-name g-ellipsis'>十月结晶#孕产普拉提(晋江宝龙店)</div>
 						<div class='g-liliclub-add g-ellipsis'>晋江市梅岭聚智置业6#301室</div>
 						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
 							5257</div>
-					</div>
-					<div class='g-liliclub-item g-left'>
+					</a>
+					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
 						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
 						</div>
 						<div class='g-liliclub-name g-ellipsis'>十月结晶#产后康复中心 NO.001杭州市创智绿谷发展中心</div>
 						<div class='g-liliclub-add g-ellipsis'>杭州市创智绿谷发展中心5幢1楼123室杭州市创智绿谷发展中心</div>
 						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
 							5257</div>
-					</div>
-					<div class='g-liliclub-item g-left'>
+					</a>
+					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
 						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
 						</div>
 						<div class='g-liliclub-name g-ellipsis'>十月结晶#孕产普拉提(晋江宝龙店)</div>
 						<div class='g-liliclub-add g-ellipsis'>晋江市梅岭聚智置业6#301室</div>
 						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
 							5257</div>
-					</div>
+					</a>
 
 				</div>
 				<div class='appointment-btn hover-btn'>立即预约</div>
@@ -141,7 +148,7 @@
 		<!-- 尾巴自己引 -->
 		<div class='footer'>
 			<div class='footer-top-box'>
-				<div class='footer-top g-center '>
+				<div class='footer-top footer-center'>
 					<div class='footer-top-text'><a href='lili-club-list.html'>月子会所</a><span class='line'>丨</span><a
 							href='post-birth-list.html'>产后康复</a><span class='line'>丨</span><a
 							href='maternity-matron-list.html'>月嫂服务</a><span class='line'>丨</span><a
@@ -156,12 +163,32 @@
 				</div>
 			</div>
 			<div class='footer-bottom-box'>
-				<div class='footer-bottom g-center'>
+				<div class='footer-bottom footer-center'>
 					<div class='footer-company'>浙江施俞儿实业有限公司</div>
 					<div class='footer-company-beian'>浙ICP备20003207号-1 Copyright c 2019-2020</div>
 				</div>
 			</div>
 		</div>
+		<ul class="right-bar">
+			<li class="g-flex g-flex-ac">
+				<div class="box">
+					<img src="./images/wechat.png" alt="">
+					微信留言
+				</div>
+			</li>
+			<li class="g-flex g-flex-ac">
+				<div class="box">
+					<img src="./images/phone.png" alt="">
+					在线客服
+				</div>
+			</li>
+			<li class="g-flex g-flex-ac" id="toTop">
+				<div class="box">
+					<img src="./images/top.png" alt="">
+					返回顶部
+				</div>
+			</li>
+		</ul>
 	</body>
 	<script>
 
