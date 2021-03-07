@@ -216,6 +216,7 @@ html,body{
 .t-index-footer-slide{
 	display: block;
 	background: #F8F8F8;
+	height: auto!important;
 }
 .t-index-footer-box{
 	width: 100%;
