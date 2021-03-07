@@ -72,6 +72,7 @@
   padding-left: 110px;
   padding-bottom: 97px;
   border-bottom: 1px solid #A7A7A7;
+  margin-right: 18px;
 }
 
 .t-base-info .t-left {
@@ -193,6 +194,7 @@
   border-bottom: 1px solid #A7A7A7;
   margin-top: 33px;
   padding-bottom: 79px;
+  margin-right: 18px;
 }
 
 .t-title {
@@ -291,6 +293,7 @@
   margin-top: 26px;
   padding-bottom: 66px;
   border-bottom: 1px solid #A7A7A7;
+  margin-right: 18px;
 }
 
 .t-certificate .t-title::before {
@@ -306,7 +309,7 @@
 }
 
 .t-certificate-imgs li {
-  padding: 0 44px;
+  padding: 0 40px;
   float: left;
   margin-bottom: 54px;
   border-right: 1px solid #A7A7A7;
