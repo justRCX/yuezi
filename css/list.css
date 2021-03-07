@@ -1,0 +1,254 @@
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: "SourceHanSansCN", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.block-img {
+	display: block;
+}
+
+.inlineblock-img {
+	display: inline-block;
+}
+
+
+.g-banner {
+	width: 100%;
+	position: relative;
+}
+
+.g-banner img {
+	width: 100%
+}
+
+.g-main {
+	width: 100%;
+	padding: 90px 0;
+	background: #FFF7F4;
+}
+
+
+/* 老师相关 */
+.g-search-box {
+	width: 100%;
+	height: 50px;
+	background: #F8CEC0;
+	padding: 20px 0;
+}
+
+.g-teachers {
+	width: 100%;
+	max-height: 540px;
+	min-height: 230px;
+	overflow-y: auto;
+	background: #fff;
+}
+
+.g-teachers-item {
+	padding: 30px 0 30px 30px
+}
+
+.g-teacher-pic {
+	width: 204px;
+	height: 204px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-right: 25px
+}
+
+.g-teacher-info {
+	width: 520px;
+	margin-top: 10px
+}
+
+.g-teacher-name {
+	font-size: 26px;
+	font-weight: 500;
+	color: #1C1C1C;
+	line-height: 40px;
+}
+
+.g-teacher-des {
+	padding: 0 10px;
+	height: 24px;
+	line-height: 24px;
+	background: #DCBA95;
+	border-radius: 12px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 8px
+}
+
+.g-label-box {
+	padding-left: 30px;
+	padding-top: 30px;
+	width: 350px;
+	border-left: 1px solid #A7A7A7;
+	height: 140px;
+	margin-top: 31px
+}
+
+.g-label {
+	padding: 0 15px;
+	line-height: 28px;
+	border: 1px solid #A7A7A7;
+	border-radius: 14px;
+	color: #6E6E6E;
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-right: 3px;
+	margin-bottom: 15px;
+}
+
+.g-teacher-top {
+	margin-bottom: 30px;
+}
+
+.teacher-info-con {
+	margin-right: 40px;
+	line-height: 30px;
+	font-size: 20px;
+	color: #1C1C1C;
+}
+
+.teacher-info-con img {
+	vertical-align: middle;
+	margin-top: -9px;
+	margin-right: 5px;
+}
+
+.g-teacher-center {
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.g-teacher-bottom {
+	padding-top: 10px;
+}
+
+.certificate-left {
+	margin-right: 0;
+	width: 90px
+}
+
+.certificate-right {
+	width: 380px;
+	font-size: 20px;
+	color: #1C1C1C;
+	line-height: 30px
+}
+
+.certificate-right span {
+	margin: 0 10px
+}
+
+.appointment-btn {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: #CEAA73;
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+	letter-spacing: 8px;
+	cursor: pointer;
+	
+}
+.hover-btn{position: relative;}
+.hover-btn:hover::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 5%)
+}
+
+/* 月子会所 */
+.g-liliclub {
+	width: 100%;
+	max-height: 540px;
+	min-height: 230px;
+	overflow-y: auto;
+	background: #fff;
+}
+
+.g-liliclub-item {
+	width: 500px;
+	padding: 35px 40px
+}
+
+.g-liliclub-des {
+	color: #000;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.g-liliclub-des img {
+	margin-right: 5px;
+	vertical-align: middle;
+	margin-top: -6px;
+}
+
+.g-liliclub-name {
+	color: #595959;
+	font-size: 24px;
+	margin-bottom: 18px;
+}
+
+.g-liliclub-add {
+	color: #9E9E9E;
+	font-size: 16px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #D2D2D2;
+	margin-bottom: 20px;
+}
+
+.g-liliclub-tel {
+	color: #9E9E9E;
+	font-size: 24px;
+}
+
+.g-liliclub-tel img {
+	margin-right: 15px;
+	vertical-align: middle;
+	margin-top: -6px;
+}
+
+
+/* 查询 */
+.g-search{
+	text-align: center;
+}
+
+.select {
+	width: 254px;
+	height: 50px;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	background: #F8CEC0;
+	color: #fff;
+	font-size: 18px;
+	padding: 0 15px;
+	margin-right: 6px;
+}
+.search-btn{
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	color:#595959;
+	font-size:18px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	cursor: pointer;
+}
