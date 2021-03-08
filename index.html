@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="./css/headerFooter.css" />
   <link rel="stylesheet" type="text/css" href="./css/index.css">
   <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+  <script>
+	/*@cc_on
+		document.write("<" + "link href=\"css/ie10.css\" rel=\"stylesheet\"/>")
+	@*/ 
+	</script>
+
 </head>
 
 <body>
@@ -59,24 +65,26 @@
 							<div class="t-index-top" style="background-image: url(../images/index/index-top.jpg)"></div>
 						</div>
 					</div>
-					<div class="swiper-button-prev t-index-banner-prev"></div>
-					<div class="swiper-button-next t-index-banner-next"></div>
+					<div class="swiper-button-prev t-index-banner-prev g-flex g-flex-ac g-flex-jc">
+						<img src="images/index/banner-left.png">
+					</div>
+					<div class="swiper-button-next t-index-banner-next g-flex g-flex-ac g-flex-jc">
+						<img src="images/index/banner-right.png">
+					</div>
 				</div>
 			</div>
 			<div class="swiper-slide g-flex g-flex-ac g-flex-jc">
 				<div class="t-index-content-bg">
-					<!-- <video src="https://www.w3school.com.cn/i/movie.ogg" width="100%" controls autoplay></video> -->
-						<video width="100%" height="100%" muted loop="loop">
-					  		<source src="https://www.w3school.com.cn/i/movie.ogg" type="video/mp4">
-						</video>
+					<video width="100%" height="100%" muted loop="loop" id="myVideo1">
+				  		<source src="https://video-qn.pic88.com/18/15/95/36g888piC6i2.mp4" type="video/mp4">
+					</video>
 				</div>
 				<div class="g-flex-y g-flex-ac g-flex-jc scale">
 					<div class="g-flex">
 						<a href="javascript:;" class="t-index-content-big-img-box g-flex g-flex-ac g-flex-jc">
 							<!-- <img src="images/index/index-content-big-img.jpg" class="t-normal-img" width="100%"> -->
-							<!-- <video src="https://www.w3school.com.cn/i/movie.ogg" controls="controls" class="t-normal-img" width="100%"></video> -->
-							<video width="100%" height="100%" controls muted loop="loop">
-				  				<source src="https://www.w3school.com.cn/i/movie.ogg" type="video/mp4">
+							<video width="100%" height="100%" muted controls loop="loop" id="myVideo">
+				  				<source src="https://video-qn.pic88.com/18/15/95/36g888piC6i2.mp4" type="video/mp4">
 				  			</video>
 						</a>
 						<div class="t-index-content-news-box">
@@ -384,6 +392,13 @@
 	 </ul>
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<!--[if !IE]><!-->
+	<script>  
+		if (/*@cc_on!@*/false) {  
+		    $('.t-index-content-bg').addClass('ie10')
+		}  
+	</script>
+	<!--<![endif]-->  
 	<script type="text/javascript">
 		
 	    var pageSwiper = new Swiper('#pageSwiper', {
@@ -392,6 +407,25 @@
 			speed:800,
 			delay:3000,
 			slidesPerView: 'auto',
+			on: {
+				slideChangeTransitionStart: function(){
+					var index = this.activeIndex;
+					console.log(index)
+					if(index==1){
+						
+					}else{
+						$('#myVideo').get(0).pause();
+						$('#myVideo1').get(0).pause();
+					}
+				},
+				slideChangeTransitionEnd:function(){
+					var index = this.activeIndex;
+					if(index==1){
+						$('#myVideo').get(0).play();
+						$('#myVideo1').get(0).play();
+					}
+				}
+			}
 		})
 
 	    var bannerSwiper = new Swiper('#bannerSwiper',{
@@ -453,7 +487,25 @@
 			pageSwiper.slideTo(0,500);
 		})
 		
-    
+
+		$('#myVideo').get(0).addEventListener('play', function (e) {//播放开始执行的函数
+ 			$('#myVideo1').get(0).play();
+        });
+
+        
+        $('#myVideo').get(0).addEventListener('pause', function (e) {//暂停开始执行的函数
+        	$('#myVideo1').get(0).pause();
+        });
+
+        $('#myVideo').get(0).addEventListener('timeupdate', function (e) {//播放开始执行的函数
+        	var time1 = $('#myVideo1').get(0).currentTime;
+        	var time = $('#myVideo').get(0).currentTime;
+        	if(time - time1 > 0.5){
+        		console.log(time,time1)
+        		$('#myVideo1').get(0).currentTime = $('#myVideo').get(0).currentTime;
+        	}
+        });
+
 	</script>
 </body>
 	
