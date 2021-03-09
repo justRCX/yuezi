@@ -28,7 +28,6 @@ body {
 
 .g-main {
 	width: 100%;
-	padding: 90px 0;
 	background: #FFF7F4;
 }
 
@@ -139,7 +138,7 @@ body {
 }
 
 .certificate-right {
-	width: 380px;
+	width: 400px;
 	font-size: 20px;
 	color: #1C1C1C;
 	line-height: 30px
@@ -159,18 +158,23 @@ body {
 	text-align: center;
 	letter-spacing: 8px;
 	cursor: pointer;
-	
+	display: block;
 }
-.hover-btn{position: relative;}
+
+.hover-btn {
+	position: relative;
+	cursor: pointer;
+}
+
 .hover-btn:hover::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 5%)
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 5%)
 }
 
 /* 月子会所 */
@@ -227,12 +231,14 @@ body {
 
 
 /* 查询 */
-.g-search{
+.g-search {
 	text-align: center;
 }
 
 .select {
-
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
 	width: 254px;
 	height: 50px;
 	border: 1px solid #FFFFFF;
@@ -243,16 +249,24 @@ body {
 	padding: 0 15px;
 	margin-right: 6px;
 	outline: none;
+	background: url(../images/list/select.png) no-repeat;
+	background-position: 235px center;
 
 }
-.search-btn{
+option{
+	background: #F8CEC0;
+}
+
+select::-ms-expand { display: none; }
+
+.search-btn {
 	width: 180px;
 	height: 50px;
 	line-height: 50px;
 	background: #FFFFFF;
 	border-radius: 5px;
-	color:#595959;
-	font-size:18px;
+	color: #595959;
+	font-size: 18px;
 	text-align: center;
 	display: inline-block;
 	border: 1px solid #FFFFFF;

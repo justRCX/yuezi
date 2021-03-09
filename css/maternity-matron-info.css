@@ -301,14 +301,15 @@
 }
 
 .t-detail-info .t-appointment {
+	display: block;
   width: 100px;
-  height: 26px;
+  height: 30px;
   background: #DCBA95;
   border-radius: 13px;
   font-size: 18px;
   font-weight: 500;
   color: #FFFFFF;
-  line-height: 25px;
+  line-height: 30px;
   margin: 0 auto;
   text-align: center;
   cursor: pointer;

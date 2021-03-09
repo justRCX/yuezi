@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,162 +11,178 @@
 		<link rel="stylesheet" href="./css/public.css">
 		<link rel="stylesheet" href="./css/headerFooter.css" />
 		<link rel="stylesheet" href="./css/list.css">
-		<script src='./js/city.js'></script>
+		<link rel="stylesheet" type="text/css" href="./css/index.css">
+		<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
 		<script src="./js/jquery.js"></script>
-		<script type="text/javascript">
-			window.onload = function() {
-				var citys = pro_city_data.citylist;
-				var oS1 = document.getElementsByTagName('select');
-				for (var i = 0; i < citys.length; i++) {
-					oS1[0].innerHTML += '<option value="' + citys[i].p + '">' + citys[i].p + '</option>';
-				}
-				oS1[0].onchange = function() {
-					var value = oS1[0].value
-					oS1[1].innerHTML = '<option>城市</option>';
-					for (var i = 0; i < citys.length; i++) {
-						if (value == citys[i].p) {
-							for (var j = 0; j < citys[i].c.length; j++) {
-								oS1[1].innerHTML += '<option value="' + citys[i].c[j].n + '">' + citys[i].c[j].n +
-									'</option>'
-							}
-						}
-					}
-				}
-				$('#toTop').click(function() {
-					$("html,body").animate({
-						scrollTop: 0
-					}, 100);
-				})
+		<script src='./js/city.js'></script>
 
-			}
-		</script>
 	</head>
 
 	<body>
-		<!-- 头自己引一下 -->
-		<div class='header'>
-			<div class='header-content footer-center g-overflow-hidden'>
-				<img src="./images/hearder-logo.png" class="g-left block-img header-logo">
-				<div class='header-item g-left'>
-					<a href='index.html' class='header-text'>首页</a>
-				</div>
-				<div class='header-item g-left'>
-					<a href='javascript:void(0)' class='header-text'>所有产品</a>
-				</div>
-				<div class='header-item g-left'>
-					<a href='javascript:void(0)' class='header-text'>孕物语</a>
-				</div>
-				<div class='header-item g-left active'>
-					<a href='lili-club-list.html' class='header-text'>月子会所</a>
-				</div>
-				<div class='header-item g-left '>
-					<a href='post-birth-list.html' class='header-text'>产后康复</a>
-				</div>
-				<div class='header-item g-left'>
-					<a href='maternity-matron-list.html' class='header-text'>月嫂服务</a>
-				</div>
-				<div class='header-item g-left'>
-					<a href='javascript:void(0)' class='header-text'>品牌资讯</a>
-				</div>
-				<div class='header-item g-left'>
-					<a href='javascript:void(0)' class='header-text'>生态加盟</a>
-				</div>
-			</div>
-		</div>
-
-		<div class='g-banner'>
-			<img src='./images/detail/banner.png' />
-		</div>
-		<div class='g-main'>
-			<div class='g-center'>
-				<div class='g-search-box'>
-					<div class='g-search'>
-						<select class='select'>
-							<option>省份</option>
-						</select>
-						<select class='select'>
-							<option>城市</option>
-						</select>
-						<div class='search-btn hover-btn'>立即查询</div>
+		<div class="swiper-container" id="pageSwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class='header'>
+						<div class='header-content footer-center g-overflow-hidden'>
+							<img src="./images/hearder-logo.png" class="g-left block-img header-logo">
+							<div class='header-item g-left '>
+								<a href='index.html' class='header-text'>首页</a>
+							</div>
+							<div class='header-item g-left'>
+								<a href='javascript:void(0)' class='header-text'>所有产品</a>
+							</div>
+							<div class='header-item g-left'>
+								<a href='javascript:void(0)' class='header-text'>孕物语</a>
+							</div>
+							<div class='header-item g-left active'>
+								<a href='lili-club-list.html' class='header-text'>月子会所</a>
+							</div>
+							<div class='header-item g-left '>
+								<a href='post-birth-list.html' class='header-text'>产后康复</a>
+							</div>
+							<div class='header-item g-left '>
+								<a href='maternity-matron-list.html' class='header-text'>月嫂服务</a>
+							</div>
+							<div class='header-item g-left'>
+								<a href='javascript:void(0)' class='header-text'>品牌资讯</a>
+							</div>
+							<div class='header-item g-left'>
+								<a href='javascript:void(0)' class='header-text'>生态加盟</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-container" id="bannerSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="t-index-top" style="background-image: url(./images/index/index-top.jpg)">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="t-index-top" style="background-image: url(./images/index/index-top.jpg)">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="t-index-top" style="background-image: url(./images/index/index-top.jpg)">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev t-index-banner-prev g-flex g-flex-ac g-flex-jc">
+							<img src="images/index/banner-left.png">
+						</div>
+						<div class="swiper-button-next t-index-banner-next g-flex g-flex-ac g-flex-jc">
+							<img src="images/index/banner-right.png">
+						</div>
 					</div>
 				</div>
-				<div class='g-liliclub g-overflow-hidden'>
-					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
-						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
-						</div>
-						<div class='g-liliclub-name g-ellipsis'>十月结晶#逸庭月子会所 NO.001</div>
-						<div class='g-liliclub-add g-ellipsis'>上海市浦东新区世纪大道210号</div>
-						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
-							5257</div>
-					</a>
-					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
-						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
-						</div>
-						<div class='g-liliclub-name g-ellipsis'>十月结晶#芮庭月子会所 NO.001</div>
-						<div class='g-liliclub-add g-ellipsis'>上海市杨浦区闸殷路513号</div>
-						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
-							5257</div>
-					</a>
-					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
-						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
-						</div>
-						<div class='g-liliclub-name g-ellipsis'>十月结晶#产后恢复中心 NO.001</div>
-						<div class='g-liliclub-add g-ellipsis'>上海市浦东新区世博大道168号2楼</div>
-						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
-							5257</div>
-					</a>
-					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
-						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
-						</div>
-						<div class='g-liliclub-name g-ellipsis'>十月结晶#孕产普拉提(晋江宝龙店)</div>
-						<div class='g-liliclub-add g-ellipsis'>晋江市梅岭聚智置业6#301室</div>
-						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
-							5257</div>
-					</a>
-					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
-						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
-						</div>
-						<div class='g-liliclub-name g-ellipsis'>十月结晶#产后康复中心 NO.001杭州市创智绿谷发展中心</div>
-						<div class='g-liliclub-add g-ellipsis'>杭州市创智绿谷发展中心5幢1楼123室杭州市创智绿谷发展中心</div>
-						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
-							5257</div>
-					</a>
-					<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
-						<div class='g-liliclub-des'><img src='images/detail/vr.png' class='inlineblock-img' />720°全景在线观看
-						</div>
-						<div class='g-liliclub-name g-ellipsis'>十月结晶#孕产普拉提(晋江宝龙店)</div>
-						<div class='g-liliclub-add g-ellipsis'>晋江市梅岭聚智置业6#301室</div>
-						<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel 400 777
-							5257</div>
-					</a>
-
-				</div>
-				<div class='appointment-btn hover-btn'>立即预约</div>
-			</div>
-		</div>
+				<div class='g-main swiper-slide g-flex g-flex-ac g-flex-jc'>
 
 
-		<!-- 尾巴自己引 -->
-		<div class='footer'>
-			<div class='footer-top-box'>
-				<div class='footer-top footer-center'>
-					<div class='footer-top-text'><a href='lili-club-list.html'>月子会所</a><span class='line'>丨</span><a
-							href='post-birth-list.html'>产后康复</a><span class='line'>丨</span><a
-							href='maternity-matron-list.html'>月嫂服务</a><span class='line'>丨</span><a
-							href='javascript:void(0)'>生态加盟</a></div>
-					<div class='footer-top-text'>
-						<img src='images/footer-tel.png' class='inlineblock-img' /><span class='footer-tel'>400 826
-							3635</span>
-						<img src='images/footer-address.png' class='inlineblock-img' /><span
-							class='footer-add'>杭州市江干区创智绿谷发展中心8幢301室</span>
+					<div class='g-center'>
+						<div class='g-search-box'>
+							<div class='g-search'>
+								<select class='select'>
+									<option>省份</option>
+								</select>
+								<select class='select'>
+									<option>城市</option>
+								</select>
+								<div class='search-btn hover-btn'>立即查询</div>
+							</div>
+						</div>
+						<div class='g-liliclub g-overflow-hidden'>
+							<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
+								<div class='g-liliclub-des'><img src='images/detail/vr.png'
+										class='inlineblock-img' />720°全景在线观看
+								</div>
+								<div class='g-liliclub-name g-ellipsis'>十月结晶#逸庭月子会所 NO.001</div>
+								<div class='g-liliclub-add g-ellipsis'>上海市浦东新区世纪大道210号</div>
+								<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel
+									400 777
+									5257</div>
+							</a>
+							<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
+								<div class='g-liliclub-des'><img src='images/detail/vr.png'
+										class='inlineblock-img' />720°全景在线观看
+								</div>
+								<div class='g-liliclub-name g-ellipsis'>十月结晶#芮庭月子会所 NO.001</div>
+								<div class='g-liliclub-add g-ellipsis'>上海市杨浦区闸殷路513号</div>
+								<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel
+									400 777
+									5257</div>
+							</a>
+							<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
+								<div class='g-liliclub-des'><img src='images/detail/vr.png'
+										class='inlineblock-img' />720°全景在线观看
+								</div>
+								<div class='g-liliclub-name g-ellipsis'>十月结晶#产后恢复中心 NO.001</div>
+								<div class='g-liliclub-add g-ellipsis'>上海市浦东新区世博大道168号2楼</div>
+								<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel
+									400 777
+									5257</div>
+							</a>
+							<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
+								<div class='g-liliclub-des'><img src='images/detail/vr.png'
+										class='inlineblock-img' />720°全景在线观看
+								</div>
+								<div class='g-liliclub-name g-ellipsis'>十月结晶#孕产普拉提(晋江宝龙店)</div>
+								<div class='g-liliclub-add g-ellipsis'>晋江市梅岭聚智置业6#301室</div>
+								<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel
+									400 777
+									5257</div>
+							</a>
+							<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
+								<div class='g-liliclub-des'><img src='images/detail/vr.png'
+										class='inlineblock-img' />720°全景在线观看
+								</div>
+								<div class='g-liliclub-name g-ellipsis'>十月结晶#产后康复中心 NO.001杭州市创智绿谷发展中心</div>
+								<div class='g-liliclub-add g-ellipsis'>杭州市创智绿谷发展中心5幢1楼123室杭州市创智绿谷发展中心</div>
+								<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel
+									400 777
+									5257</div>
+							</a>
+							<a target="_blank" href='detail.html' class='g-liliclub-item g-left hover-btn'>
+								<div class='g-liliclub-des'><img src='images/detail/vr.png'
+										class='inlineblock-img' />720°全景在线观看
+								</div>
+								<div class='g-liliclub-name g-ellipsis'>十月结晶#孕产普拉提(晋江宝龙店)</div>
+								<div class='g-liliclub-add g-ellipsis'>晋江市梅岭聚智置业6#301室</div>
+								<div class='g-liliclub-tel'><img src='images/list/tel.png' class='inlineblock-img' />Tel
+									400 777
+									5257</div>
+							</a>
+
+						</div>
+						<a href="javascript:void(0)" class='appointment-btn hover-btn'>立即预约</a>
 					</div>
-					<img src='images/footer-code.png' class='block-img code-img' />
 				</div>
-			</div>
-			<div class='footer-bottom-box'>
-				<div class='footer-bottom footer-center'>
-					<div class='footer-company'>浙江施俞儿实业有限公司</div>
-					<div class='footer-company-beian'>浙ICP备20003207号-1 Copyright c 2019-2020</div>
+
+
+				<div class="swiper-slide t-index-footer-slide">
+					<!-- 尾巴自己引 -->
+					<div class='footer'>
+						<div class='footer-top-box'>
+							<div class='footer-top footer-center '>
+								<div class='footer-top-text'><a href='lili-club-list.html'>月子会所</a><span
+										class='line'>丨</span><a href='post-birth-list.html'>产后康复</a><span
+										class='line'>丨</span><a href='maternity-matron-list.html'>月嫂服务</a><span
+										class='line'>丨</span><a href='javascript:void(0)'>生态加盟</a></div>
+								<div class='footer-top-text'>
+									<img src='images/footer-tel.png' class='inlineblock-img' /><span
+										class='footer-tel'>400 826
+										3635</span>
+									<img src='images/footer-address.png' class='inlineblock-img' /><span
+										class='footer-add'>杭州市江干区创智绿谷发展中心8幢301室</span>
+								</div>
+								<img src='images/footer-code.png' class='block-img code-img' />
+							</div>
+						</div>
+						<div class='footer-bottom-box'>
+							<div class='footer-bottom footer-center'>
+								<div class='footer-company'>浙江施俞儿实业有限公司</div>
+								<div class='footer-company-beian'>浙ICP备20003207号-1 Copyright c 2019-2020</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -190,8 +207,13 @@
 			</li>
 		</ul>
 	</body>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<!--[if !IE]><!-->
 	<script>
-
+		if ( /*@cc_on!@*/ false) {
+			$('.t-index-content-bg').addClass('ie10')
+		}
 	</script>
-
+	<!--<![endif]-->
+	<script src='./js/list.js'></script>
 </html>

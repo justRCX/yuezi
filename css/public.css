@@ -1,7 +1,10 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+a:hover{
+	color:blue !important;
+	transition:all 0.5s ease-in
+}
 .g-flex {
   display: -moz-box;
   display: -ms-flexbox;
