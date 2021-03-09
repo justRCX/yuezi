@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="./css/headerFooter.css" />
   <link rel="stylesheet" type="text/css" href="./css/index.css">
   <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+  <script>
+	/*@cc_on
+		document.write("<" + "link href=\"css/ie10.css\" rel=\"stylesheet\"/>")
+	@*/ 
+	</script>
+
 </head>
 
 <body>
@@ -47,61 +53,210 @@
 						</div>
 					</div>
 				</div>
-				<div class="t-index-top"></div>
+				<div class="swiper-container" id="bannerSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="t-index-top" style="background-image: url(../images/index/index-top.jpg)"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="t-index-top" style="background-image: url(../images/index/index-top.jpg)"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="t-index-top" style="background-image: url(../images/index/index-top.jpg)"></div>
+						</div>
+					</div>
+					<div class="swiper-button-prev t-index-banner-prev g-flex g-flex-ac g-flex-jc">
+						<img src="images/index/banner-left.png">
+					</div>
+					<div class="swiper-button-next t-index-banner-next g-flex g-flex-ac g-flex-jc">
+						<img src="images/index/banner-right.png">
+					</div>
+				</div>
 			</div>
 			<div class="swiper-slide g-flex g-flex-ac g-flex-jc">
-				<div class="t-index-content-bg"></div>
+				<div class="t-index-content-bg">
+					<video width="100%" height="100%" muted loop="loop" id="myVideo1">
+				  		<source src="https://video-qn.pic88.com/18/15/95/36g888piC6i2.mp4" type="video/mp4">
+					</video>
+				</div>
 				<div class="g-flex-y g-flex-ac g-flex-jc scale">
 					<div class="g-flex">
 						<a href="javascript:;" class="t-index-content-big-img-box g-flex g-flex-ac g-flex-jc">
-							<img src="images/index/index-content-big-img.jpg" class="t-normal-img" width="100%">
+							<!-- <img src="images/index/index-content-big-img.jpg" class="t-normal-img" width="100%"> -->
+							<video width="100%" height="100%" muted controls loop="loop" id="myVideo">
+				  				<source src="https://video-qn.pic88.com/18/15/95/36g888piC6i2.mp4" type="video/mp4">
+				  			</video>
 						</a>
 						<div class="t-index-content-news-box">
 							<div class="t-index-content-news-title">品牌资讯</div>
-							<ul class="t-index-news">
-								<li class="t-index-content-news-list active">
-									<a href="javascript:;">
-										<div class="t-index-content-news-hide">
-											<img src="images/index/pro1.jpg" class="t-normal-img">
-										</div>
-										<div class="g-flex g-flex-ac">
-											<div class="t-index-content-news-info">
-												十月结晶入选十月结晶入选十月结晶入选
+							<div class="t-index-news">
+								<div class="swiper-container" id="newSwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
 											</div>
-											<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-											<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-										</div>	
-									</a>
-								</li>
-								<li class="t-index-content-news-list">
-									<a href="javascript:;">
-										<div class="t-index-content-news-hide">
-											<img src="images/index/pro1.jpg" class="t-normal-img">
 										</div>
-										<div class="g-flex g-flex-ac">
-											<div class="t-index-content-news-info">
-												十月结晶入选十月结晶入选十月结晶入选
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
 											</div>
-											<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-											<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-										</div>	
-									</a>
-								</li>
-								<li class="t-index-content-news-list">
-									<a href="javascript:;">
-										<div class="t-index-content-news-hide">
-											<img src="images/index/pro1.jpg" class="t-normal-img">
 										</div>
-										<div class="g-flex g-flex-ac">
-											<div class="t-index-content-news-info">
-												十月结晶入选十月结晶入选十月结晶入选
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
 											</div>
-											<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-											<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-										</div>	
-									</a>
-								</li>
-							</ul>
+										</div>
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="t-index-content-news-list">
+												<a href="javascript:;">
+													<div class="t-index-content-news-hide">
+														<img src="images/index/pro1.jpg" class="t-normal-img">
+													</div>
+													<div class="g-flex g-flex-ac">
+														<div class="t-index-content-news-info">
+															十月结晶入选十月结晶入选十月结晶入选
+														</div>
+														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
+														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
+													</div>	
+												</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
 
 						</div>
 					</div>
@@ -121,7 +276,7 @@
 										<div class="t-index-brand-box g-flex g-flex-ac g-flex-jc">
 											<img src="images/index/brand2.png" class="t-normal-img">
 										</div>
-										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
+										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树中国孕婴童产业联盟宝宝树</p>
 									</a>
 								</div>
 								<div class="swiper-slide">
@@ -162,13 +317,36 @@
 			<div class="swiper-slide t-index-pro-box">
 				<div class="t-index-pro-box g-flex g-flex-ac g-flex-jc scale">
 					<ul class="t-index-pro-list">
-						<li class="active g-flex g-flex-ac g-flex-jc" data-img="images/index/pro-big-img.jpg">妈妈用品</li>
-						<li class="g-flex g-flex-ac g-flex-jc" data-img="../images/index/index-top.jpg">宝宝用品</li>
-						<li class="g-flex g-flex-ac g-flex-jc" data-img="images/index/pro-big-img.jpg">月子产康</li>
-						<li class="g-flex g-flex-ac g-flex-jc" data-img="images/index/pro-big-img3.jpg">月嫂服务</li>
+						<li class="active g-flex g-flex-ac g-flex-jc" data-idx="0">妈妈用品</li>
+						<li class="g-flex g-flex-ac g-flex-jc" data-idx="1">宝宝用品</li>
+						<li class="g-flex g-flex-ac g-flex-jc" data-idx="2">月子产康</li>
+						<li class="g-flex g-flex-ac g-flex-jc" data-idx="3">月嫂服务</li>
 					</ul>
 					<div class="t-index-pro-img g-flex g-flex-ac g-flex-jc">
-						<img src="images/index/pro-big-img.jpg" class="t-normal-img" width="100%">
+						<div class="swiper-container" id="proSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="images/index/pro-big-img1.jpg" class="t-normal-img" width="100%">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="images/index/pro-big-img2.jpg" class="t-normal-img" width="100%">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="images/index/pro-big-img3.jpg" class="t-normal-img" width="100%">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="images/index/pro-big-img4.jpg" class="t-normal-img" width="100%">
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -222,6 +400,13 @@
 	 </ul>
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<!--[if !IE]><!-->
+	<script>  
+		if (/*@cc_on!@*/false) {  
+		    $('.t-index-content-bg').addClass('ie10')
+		}  
+	</script>
+	<!--<![endif]-->  
 	<script type="text/javascript">
 		
 	    var pageSwiper = new Swiper('#pageSwiper', {
@@ -230,32 +415,105 @@
 			speed:800,
 			delay:3000,
 			slidesPerView: 'auto',
+			on: {
+				slideChangeTransitionStart: function(){
+					var index = this.activeIndex;
+					console.log(index)
+					if(index==1){
+						
+					}else{
+						$('#myVideo').get(0).pause();
+						$('#myVideo1').get(0).pause();
+					}
+				},
+				slideChangeTransitionEnd:function(){
+					var index = this.activeIndex;
+					if(index==1){
+						$('#myVideo').get(0).play();
+						$('#myVideo1').get(0).play();
+					}
+				}
+			}
 		})
 
+	    var bannerSwiper = new Swiper('#bannerSwiper',{
+			speed:800,
+			delay:3000,
+			navigation: {
+		        nextEl: '.t-index-banner-next',
+		        prevEl: '.t-index-banner-prev',
+		    },
+	    })
 
 		var brandSwiper = new Swiper('#brandSwiper', {
 			slidesPerView: 4,
 			spaceBetween: 24,
 			navigation: {
-		        nextEl: '.swiper-button-next',
-		        prevEl: '.swiper-button-prev',
-		      }
+		        nextEl: '.t-index-brand-next',
+		        prevEl: '.t-index-brand-prev',
+		    },
+		    autoplay:true,
+		    loop:true
 		});
-  	
-		$(".t-index-pro-list").on('mouseover','li',function(){
-			$(this).addClass('active').siblings('li').removeClass('active');
-			$('.t-index-pro-img>img').attr('src',$(this).attr('data-img'));
+
+		var newSwiper = new Swiper('#newSwiper',{
+			direction : 'vertical',
+			autoplay:true,
+		    loop:true,
+		    slidesPerView: 'auto',
 		})
 
-		$(".t-index-news").on('mouseover','li',function(){
+		var proSwiper = new Swiper('#proSwiper',{
+			speed:800,
+			delay:3000,
+			effect:'fade',
+			autoplay:{
+				disableOnInteraction : false,
+			},
+			on: {
+				slideChangeTransitionStart: function(){
+					var index = this.activeIndex;
+					$('.t-index-pro-list li').eq(index).addClass('active').siblings('li').removeClass('active');
+				},
+			}
+		})
+
+  	
+		$(".t-index-pro-list").on('mouseover','li',function(){
+			var idx = $(this).attr('data-idx');
 			$(this).addClass('active').siblings('li').removeClass('active');
+			proSwiper.slideTo(idx,500);
+
+		})
+
+		$(".t-index-news").on('mouseover','.t-index-content-news-list',function(){
+			$('.t-index-news .t-index-content-news-list').removeClass('active');
+			$(this).addClass('active');
 		})	
 
 		$('#toTop').click(function() {
 			pageSwiper.slideTo(0,500);
 		})
 		
-    
+
+		$('#myVideo').get(0).addEventListener('play', function (e) {//播放开始执行的函数
+ 			$('#myVideo1').get(0).play();
+        });
+
+        
+        $('#myVideo').get(0).addEventListener('pause', function (e) {//暂停开始执行的函数
+        	$('#myVideo1').get(0).pause();
+        });
+
+        $('#myVideo').get(0).addEventListener('timeupdate', function (e) {//播放开始执行的函数
+        	var time1 = $('#myVideo1').get(0).currentTime;
+        	var time = $('#myVideo').get(0).currentTime;
+        	if(time - time1 > 0.5){
+        		console.log(time,time1)
+        		$('#myVideo1').get(0).currentTime = $('#myVideo').get(0).currentTime;
+        	}
+        });
+
 	</script>
 </body>
 	

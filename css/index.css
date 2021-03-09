@@ -1,6 +1,13 @@
 html,body{
 	height: 100%;
 }
+
+video{
+	display:block;
+	object-fit: fill;
+	outline: none;
+}
+
 .t-index-top-banner{
 	width: 100%;
 	position: fixed;
@@ -18,7 +25,6 @@ html,body{
 		-o-transform:scale(0.8);
 	}
 }
-
 
 
 
@@ -48,10 +54,26 @@ html,body{
 }
 
 
+
+#bannerSwiper .swiper-button-prev,
+#bannerSwiper .swiper-button-next{
+	background-image: none!important;
+	width: 54px;
+	height: 171px;
+	background: rgba(255,255,255,0.6);
+	margin-top: -150px!important;
+}
+.t-index-banner-prev{
+	left: 143px!important;
+}
+.t-index-banner-next{
+	right: 143px!important;
+}
+
+
 .t-index-top{
 	width: 100%;
 	height: calc(100% - 125px);
-	background-image: url('../images/index/index-top.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -67,17 +89,17 @@ html,body{
 	height: 100%;
 	left: 0;
 	top: 0;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 	position: absolute;
 	z-index: -1;
-	background-image: url(../images/index/index-content-big-img.jpg);
+/* 	background-image: url(../images/index/index-content-big-img.jpg);
 	background-position: center;
-	background-size: cover;
-	-webkit-filter: blur(20px);
-	-moz-filter: blur(20px);
-	-ms-filter: blur(20px);
-	-o-filter: blur(20px);
-	filter: blur(20px);
+	background-size: cover; */
+	-webkit-filter: blur(6px);
+	-moz-filter: blur(6px);
+	-ms-filter: blur(6px);
+	-o-filter: blur(6px);
+	filter: blur(6px);
 }
 
 
@@ -85,6 +107,9 @@ html,body{
 	width: 880px;
 	height: 495px;
 	margin-right: 24px;
+	font-size: 0;
+  	background:none;
+  	background-color:none;
 }
 .t-index-content-news-box{
 	width: 254px;
@@ -93,6 +118,7 @@ html,body{
 	padding: 33px 21px 24px;
 }
 .t-index-news{
+	height: 410px;
 	overflow: hidden;
 }
 .icon-up{
@@ -119,7 +145,6 @@ html,body{
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	font-size: 20px;
-	font-family: SourceHanSansCN;
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 45px;
@@ -138,6 +163,9 @@ html,body{
 	margin-top: 40px;
 	margin-bottom: 26px;
 	display: none
+}
+#newSwiper .swiper-slide{
+	height: auto!important;
 }
 
 
@@ -164,6 +192,9 @@ html,body{
 	font-size: 16px;
 	line-height: 56px;
 	text-align: center;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	white-space:nowrap;
 }
 .swiper-button-next.t-index-brand-next,
 .swiper-button-prev.t-index-brand-prev{
@@ -278,4 +309,14 @@ html,body{
 	color: #624D40;
 	margin: 0 40px;
 	line-height: 25px
+}
+
+.ie10 {
+	opacity: 0.3
+}
+
+@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {
+	.t-index-content-bg{
+		opacity: 0.3
+	}
 }
