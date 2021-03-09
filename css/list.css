@@ -272,3 +272,7 @@ select::-ms-expand { display: none; }
 	border: 1px solid #FFFFFF;
 	cursor: pointer;
 }
+
+.listmain{
+	width:1200px
+}
