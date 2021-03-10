@@ -437,12 +437,14 @@
 		})
 
 	    var bannerSwiper = new Swiper('#bannerSwiper',{
-			speed:800,
-			delay:3000,
+			speed: 2000,
+			delay: 2000,
+			loop: true,
+			autoplay:{delay:2000},
 			navigation: {
-		        nextEl: '.t-index-banner-next',
-		        prevEl: '.t-index-banner-prev',
-		    },
+				nextEl: '.t-index-banner-next',
+				prevEl: '.t-index-banner-prev',
+			},
 	    })
 
 		var brandSwiper = new Swiper('#brandSwiper', {

@@ -50,21 +50,18 @@ window.onload = function() {
 		}
 	}
 	$('#toTop').click(function() {
-		pageSwiper.slideTo(0,500);
-	})
-	
-	getLocation();
-	var pageSwiper = new Swiper('#pageSwiper', {
-		direction: 'vertical',
-		mousewheel: true,
-		speed: 800,
-		delay: 3000,
-		slidesPerView: 'auto'
+		$("html,body").animate({
+			scrollTop: 0
+		}, 100);
 	})
 
+	getLocation();
+
 	var bannerSwiper = new Swiper('#bannerSwiper', {
-		speed: 800,
-		delay: 3000,
+		speed: 2000,
+		delay: 2000,
+		loop: true,
+		autoplay:{delay:2000},
 		navigation: {
 			nextEl: '.t-index-banner-next',
 			prevEl: '.t-index-banner-prev',

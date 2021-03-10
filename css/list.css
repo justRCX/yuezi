@@ -29,6 +29,7 @@ body {
 .g-main {
 	width: 100%;
 	background: #FFF7F4;
+	padding: 90px 0
 }
 
 
@@ -253,11 +254,14 @@ body {
 	background-position: 235px center;
 
 }
-option{
+
+option {
 	background: #F8CEC0;
 }
 
-select::-ms-expand { display: none; }
+select::-ms-expand {
+	display: none;
+}
 
 .search-btn {
 	width: 180px;
@@ -273,6 +277,6 @@ select::-ms-expand { display: none; }
 	cursor: pointer;
 }
 
-.listmain{
-	width:1200px
+.listmain {
+	width: 1200px
 }
