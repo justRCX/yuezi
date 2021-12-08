@@ -14,9 +14,8 @@
 
 <body>
 
-  <!-- 侧滑导航根容器 -->
+  <!-- 头 -->
 <div class="mui-off-canvas-wrap mui-draggable mui-slide-in" id="offCanvasWrapper">
-  <!-- 菜单容器 -->
   <aside class="mui-off-canvas-left mui-transitioning">
     <div class="mui-scroll-wrapper" id="offCanvasSideScroll" >
       <div class="mui-scroll" style="color: #fff;">
@@ -33,9 +32,7 @@
       </div>
     </div>
   </aside>
-  <!-- 主页面容器 -->
   <div class="mui-inner-wrap ">
-    <!-- 主页面标题 -->
     <header class="mui-bar mui-bar-nav header">
       <img class="header-icon " src="../images/icon.png" id="offCanvasShow">
       <img class="header-logo " src="../images/hearder-logo.png">
@@ -50,14 +47,7 @@
       <div class="mui-off-canvas-backdrop"></div>
   </div>
 </div>
-<script>
-  	mui.init();
-    var offCanvasWrapper = mui('#offCanvasWrapper');
-	document.getElementById('offCanvasShow').addEventListener('tap', function() {
-				offCanvasWrapper.offCanvas('show');
-			});
-      mui('#offCanvasSideScroll').scroll();
-</script>
+<script src="../js/header.js"></script>
 </body>
 
 </html>

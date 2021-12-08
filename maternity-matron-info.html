@@ -5,186 +5,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>月嫂信息</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/public.css">
   <link rel="stylesheet" href="./css/evaluate.css">
   <link rel="stylesheet" href="./css/maternity-matron-info.css">
   <link rel="stylesheet" href="./css/headerFooter.css">
-  <script src="./js/jquery.js"></script>
+  <link rel="stylesheet" href="./css/mui.min.css">
+  <script src="./js/mui.min.js"></script>
 </head>
 
 <body>
-  <!-- 头自己引一下 -->
-  <div class='header'>
-    <div class='header-content footer-center g-overflow-hidden'>
-      <img src="./images/hearder-logo.png" class="g-left block-img header-logo">
-      <div class='header-item g-left'>
-        <a href='index.html' class='header-text'>首页</a>
-      </div>
-      <div class='header-item g-left'>
-        <a href='javascript:void(0)' class='header-text'>所有产品</a>
-      </div>
-      <div class='header-item g-left'>
-        <a href='javascript:void(0)' class='header-text'>孕物语</a>
-      </div>
-      <div class='header-item g-left '>
-        <a href='lili-club-list.html' class='header-text'>月子会所</a>
-      </div>
-      <div class='header-item g-left '>
-        <a href='post-birth-list.html' class='header-text'>产后康复</a>
-      </div>
-      <div class='header-item g-left active'>
-        <a href='maternity-matron-list.html' class='header-text'>月嫂服务</a>
-      </div>
-      <div class='header-item g-left'>
-        <a href='javascript:void(0)' class='header-text'>品牌资讯</a>
-      </div>
-      <div class='header-item g-left'>
-        <a href='javascript:void(0)' class='header-text'>生态加盟</a>
+
+  <!-- 头 -->
+<div class="mui-off-canvas-wrap mui-draggable mui-slide-in" id="offCanvasWrapper">
+  <aside class="mui-off-canvas-left mui-transitioning">
+    <div class="mui-scroll-wrapper" id="offCanvasSideScroll" >
+      <div class="mui-scroll" style="color: #fff;">
+        <!-- 菜单具体展示内容 -->
+          <a class="header-tab-item">首页</a>
+          <a class="header-tab-item">所有产品</a>
+          <a class="header-tab-item">孕物语</a>
+          <a class="header-tab-item">月子会所</a>
+          <a class="header-tab-item">产后恢复</a>
+          <a class="header-tab-item">月嫂服务</a>
+          <a class="header-tab-item">品牌简介</a>
+          <a class="header-tab-item">品牌资讯</a>
+          <a class="header-tab-item">联系我们</a>
       </div>
     </div>
-  </div>
-  <div class="t-content">
-    <div class="g-center g-white">
+  </aside>
+  <div class="mui-inner-wrap ">
+    <header class="mui-bar mui-bar-nav header">
+      <img class="header-icon " src="./images/icon.png" id="offCanvasShow">
+      <img class="header-logo " src="./images/hearder-logo.png">
+    </header>
+    <div class="mui-content mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <!-- 主界面具体展示内容 -->
 
-      <div class="t-position-left">
-        <div class="t-header-img">
-          <img src="images/list/p1.png">
-        </div>
-      </div>
+        <div class="t-content">
+          <div class="g-center g-white">
+            <div class="t-base-info  g-flex g-flex-ac">
+              <div class="t-header-img">
+                <img src="http://test.microdemo.net/uploads/210606/2-210606145923205.jpg" alt="">
+              </div>
+              <div class=" t-left">
+                <div class="t-base-info-name g-flex g-flex-ac">
+                  陈老师
+                  <span>全天上户</span>
+                </div>
+                <div class="t-base-info-list g-overflow-hidden">
+                  <div class="item age g-left">40岁</div>
+                  <div class="item experience g-left">4年经验</div>
+                  <div class="item address g-left">杭州人</div>
+                </div>
+                <div class="t-base-info-certificate">
+                  <span>证书:</span>
+                  <div class="t-base-info-certificate-item">健康证</div>
+                  <div class="t-base-info-certificate-item">母婴护理证</div>
+                  <div class="t-base-info-certificate-item">催乳师证</div>
+                  <div class="t-base-info-certificate-item">月子餐烹饪证</div>
+                </div>
+                <div class="t-tag">
+                  <ul class="g-overflow-hidden">
+                    <li>责任心强</li>
+                    <li>做事积极</li>
+                    <li>善于沟通</li>
+                    <li>细致认真</li>
+                  </ul>
+                </div>
+              </div>
 
-      <div class="t-base-info  g-flex g-flex-ac">
-        <div class=" t-left">
-          <div class="t-base-info-name g-flex g-flex-ac">
-            陈老师
-            <span>全天上户</span>
-          </div>
-          <div class="t-base-info-list g-overflow-hidden">
-            <div class="item age g-left">40岁</div>
-            <div class="item experience g-left">4年经验</div>
-            <div class="item address g-left">杭州人</div>
-          </div>
-          <div class="t-base-info-certificate">
-            <span>证书:</span>
-            <div class="t-base-info-certificate-item">健康证</div>
-            <div class="t-base-info-certificate-item">母婴护理证</div>
-            <div class="t-base-info-certificate-item">小儿推拿证</div>
-            <div class="t-base-info-certificate-item">催乳师证</div>
-            <div class="t-base-info-certificate-item">心理咨询证</div>
-            <div class="t-base-info-certificate-item">月子餐烹饪证</div>
-            <div class="t-base-info-certificate-item">月子餐烹饪证</div>
-            <div class="t-base-info-certificate-item">月子餐烹饪证</div>
-            <div class="t-base-info-certificate-item">月子餐烹饪证</div>
-            <div class="t-base-info-certificate-item">月子餐烹饪证</div>
-          </div>
-        </div>
-        <div class="t-right">
-          <ul class="g-overflow-hidden">
-            <li>责任心强</li>
-            <li>责任心强</li>
-            <li>责任心强</li>
-            <li>责任心强</li>
-            <li>责任心强</li>
-            <li>责任心强</li>
-          </ul>
-        </div>
-      </div>
+            </div>
 
 
-      <div class="t-detail-info">
-        <h1 class="t-title">基本信息</h1>
-        <ul>
-          <li class="item-text"><span>年龄：</span>40岁</li>
-          <li class="item-text"><span>学历：</span>高中</li>
-          <li class="item-text"><span>户籍：</span>杭州</li>
-          <li class="item-text"><span>民族：</span>汉</li>
-          <li class="item-text"><span>服务经验：</span>4年</li>
-          <li class="item-text"><span>服务城市</span>杭州</li>
-        </ul>
-        <p class="item-text"><span>证书：</span>健康证、母婴护理证、小儿推拿证、催乳师证、心理咨询证、月子餐烹饪证
-          健康证、母婴护理证、小儿推拿证、催乳师证、</p>
-        <div class="t-detail-info-qrcode">
-          <img src="./images/footer-code.png">
-          <p>微信扫码 自助预约</p>
-          <a href="javascript:void(0)" class="t-appointment">立即预约</a>
-        </div>
-      </div>
+            <div class="t-detail-info">
+              <h1 class="t-title">基本信息</h1>
+              <ul>
+                <li class="item-text"><span>年龄：</span>40岁</li>
+                <li class="item-text"><span>学历：</span>高中</li>
+                <li class="item-text"><span>户籍：</span>杭州</li>
+                <li class="item-text"><span>民族：</span>汉</li>
+                <li class="item-text"><span>服务经验：</span>4年</li>
+                <li class="item-text"><span>服务城市</span>杭州</li>
+              </ul>
+              <p class="item-text"><span>证书：</span>健康证、母婴护理证、小儿推拿证、催乳师证、心理咨询证、月子餐烹饪证
+                健康证、母婴护理证、小儿推拿证、催乳师证、</p>
+              <div class="t-detail-info-qrcode">
+                <img src="./images/footer-code.png">
+                <p>微信扫码 自助预约</p>
+                <a href="javascript:void(0)" class="t-appointment">立即预约</a>
+              </div>
+            </div>
 
-      <div class="t-certificate">
-        <h1 class="t-title">专业资质</h1>
-        <ul class="t-certificate-imgs">
-          <li>
-            <div class="img-box g-flex g-flex-ac">
-              <img src="./images/footer-code.png">
+            <div class="t-certificate">
+              <h1 class="t-title">专业资质</h1>
+              <ul class="t-certificate-imgs">
+                <li>
+                  <div class="img-box g-flex g-flex-ac">
+                    <img src="./images/footer-code.png">
+                  </div>
+                </li>
+                <li>
+                  <div class="img-box g-flex g-flex-ac">
+                    <img src="./images/footer-code.png">
+                  </div>
+                <li>
+                  <div class="img-box g-flex g-flex-ac">
+                    <img src="./images/footer-code.png">
+                  </div>
+                <li>
+                  <div class="img-box g-flex g-flex-ac">
+                    <img src="./images/footer-code.png">
+                  </div>
+                <li>
+                  <div class="img-box g-flex g-flex-ac">
+                    <img src="./images/footer-code.png">
+                  </div>
+                <li>
+                  <div class="img-box g-flex g-flex-ac">
+                    <img src="./images/footer-code.png">
+                  </div>
+                <li>
+                  <div class="img-box g-flex g-flex-ac">
+                    <img src="./images/footer-code.png">
+                  </div>
+                <li>
+                  <div class="img-box g-flex g-flex-ac">
+                    <img src="./images/footer-code.png">
+                  </div>
+              </ul>
+              <h1 class="t-title t-no-icon">通过十月10项考核认证</h1>
+              <p class="t-score t-normal-text">考核评分：4.8分（5分制）</p>
+              <ul class="t-score-list g-overflow-hidden">
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+                <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
+              </ul>
             </div>
-          </li>
-          <li>
-            <div class="img-box g-flex g-flex-ac">
-              <img src="./images/footer-code.png">
-            </div>
-          <li>
-            <div class="img-box g-flex g-flex-ac">
-              <img src="./images/footer-code.png">
-            </div>
-          <li>
-            <div class="img-box g-flex g-flex-ac">
-              <img src="./images/footer-code.png">
-            </div>
-          <li>
-            <div class="img-box g-flex g-flex-ac">
-              <img src="./images/footer-code.png">
-            </div>
-          <li>
-            <div class="img-box g-flex g-flex-ac">
-              <img src="./images/footer-code.png">
-            </div>
-          <li>
-            <div class="img-box g-flex g-flex-ac">
-              <img src="./images/footer-code.png">
-            </div>
-          <li>
-            <div class="img-box g-flex g-flex-ac">
-              <img src="./images/footer-code.png">
-            </div>
-        </ul>
-        <h1 class="t-title t-no-icon">通过十月10项考核认证</h1>
-        <p class="t-score t-normal-text">考核评分：4.8分（5分制）</p>
-        <ul class="t-score-list g-overflow-hidden">
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-          <li class="t-normal-text g-ellipsis">宝宝沐浴抚触操作技能</li>
-        </ul>
-      </div>
 
 
 
-      <div class="t-evaluate">
-        <h1>客户评价</h1>
-        <div class="t-evaluate-total g-flex">
-          <span class="t-text">综合评分</span>
-          <div class="g-overflow-hidden">
-            <span class="t-evaluate-star g-left"></span>
-            <span class="t-evaluate-star g-left"></span>
-            <span class="t-evaluate-star g-left"></span>
-            <span class="t-evaluate-star g-left"></span>
-            <span class="t-evaluate-star t-evaluate-star-half g-left"></span>
-          </div>
-        </div>
-        <ul>
-          <li>
-            <img src="./images/detail/header-pic.png" class="t-evaluate-pic">
-            <p class="t-evaluate-name">小仙女</p>
-            <div class="g-overflow-hidden t-evaluate-level">
-              <div class="t-evaluate-self g-flex g-left t-width ">
-                <span class="t-gray">综合评分</span>
+            <div class="t-evaluate">
+              <h1>客户评价</h1>
+              <div class="t-evaluate-total g-flex">
+                <span class="t-text">综合评分</span>
                 <div class="g-overflow-hidden">
                   <span class="t-evaluate-star g-left"></span>
                   <span class="t-evaluate-star g-left"></span>
@@ -193,121 +167,126 @@
                   <span class="t-evaluate-star t-evaluate-star-half g-left"></span>
                 </div>
               </div>
-              <div class="g-left t-gray t-width ">环境：满意</div>
-              <div class="g-left t-gray t-width ">护理：满意</div>
-              <div class="g-left t-gray t-width ">月子餐：非常不错</div>
+              <ul>
+                <li>
+                  <img src="./images/detail/header-pic.png" class="t-evaluate-pic">
+                  <p class="t-evaluate-name">小仙女</p>
+                  <div class="g-overflow-hidden t-evaluate-level">
+                    <div class="t-evaluate-self g-flex g-left t-width ">
+                      <span class="t-gray">综合评分</span>
+                      <div class="g-overflow-hidden">
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star t-evaluate-star-half g-left"></span>
+                      </div>
+                    </div>
+                    <div class="g-left t-gray t-width ">环境：满意</div>
+                    <div class="g-left t-gray t-width ">护理：满意</div>
+                    <div class="g-left t-gray t-width ">月子餐：非常不错</div>
+                  </div>
+                  <p class="t-gray">很开心的在这里度过了产后一个月的封闭式修养，庆幸选择了月子中心而不是住家月嫂。琅悦也是我看了好几家最终决定的，
+                    当时也就只能看看环境和房间，因为是独栋的，比较安静，房间也是大落地窗，特地选的西南面，在冬天阳光充足，非常舒服。
+                    来了之后发现服务也是非常的好，在这里每天都轮流有儿科和产科医生来巡房关心我和宝宝的健康情况。因为我剖腹产伤口
+                    有点痛，还会很周到的给我红外线照灯。宝宝在月子里肠道不好每天 特别感谢日夜陪伴我们的成阿姨，非常专业负责，教了
+                    我这个新手妈妈很多育儿的知识，哄宝宝也很有一套，晚上喂奶哄睡我基本都不起来，省力很多，我也很放心交给她。</p>
+                </li>
+                <li>
+                  <img src="./images/detail/header-pic.png" class="t-evaluate-pic">
+                  <p class="t-evaluate-name">小仙女</p>
+                  <div class="g-overflow-hidden t-evaluate-level">
+                    <div class="t-evaluate-self g-flex g-left t-width ">
+                      <span class="t-gray">综合评分</span>
+                      <div class="g-overflow-hidden">
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star t-evaluate-star-half g-left"></span>
+                      </div>
+                    </div>
+                    <div class="g-left t-gray t-width ">环境：满意</div>
+                    <div class="g-left t-gray t-width ">护理：满意</div>
+                    <div class="g-left t-gray t-width ">月子餐：非常不错</div>
+                  </div>
+                  <p class="t-gray">很开心的在这里度过了产后一个月的封闭式修养，庆幸选择了月子中心而不是住家月嫂。琅悦也是我看了好几家最终决定的，
+                    当时也就只能看看环境和房间，因为是独栋的，比较安静，房间也是大落地窗，特地选的西南面，在冬天阳光充足，非常舒服。
+                    来了之后发现服务也是非常的好，在这里每天都轮流有儿科和产科医生来巡房关心我和宝宝的健康情况。因为我剖腹产伤口
+                    有点痛，还会很周到的给我红外线照灯。宝宝在月子里肠道不好每天 特别感谢日夜陪伴我们的成阿姨，非常专业负责，教了
+                    我这个新手妈妈很多育儿的知识，哄宝宝也很有一套，晚上喂奶哄睡我基本都不起来，省力很多，我也很放心交给她。</p>
+                </li>
+                <li>
+                  <img src="./images/detail/header-pic.png" class="t-evaluate-pic">
+                  <p class="t-evaluate-name">小仙女</p>
+                  <div class="g-overflow-hidden t-evaluate-level">
+                    <div class="t-evaluate-self g-flex g-left t-width ">
+                      <span class="t-gray">综合评分</span>
+                      <div class="g-overflow-hidden">
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star g-left"></span>
+                        <span class="t-evaluate-star t-evaluate-star-half g-left"></span>
+                      </div>
+                    </div>
+                    <div class="g-left t-gray t-width ">环境：满意</div>
+                    <div class="g-left t-gray t-width ">护理：满意</div>
+                    <div class="g-left t-gray t-width ">月子餐：非常不错</div>
+                  </div>
+                  <p class="t-gray">很开心的在这里度过了产后一个月的封闭式修养，庆幸选择了月子中心而不是住家月嫂。琅悦也是我看了好几家最终决定的，
+                    当时也就只能看看环境和房间，因为是独栋的，比较安静，房间也是大落地窗，特地选的西南面，在冬天阳光充足，非常舒服。
+                    来了之后发现服务也是非常的好，在这里每天都轮流有儿科和产科医生来巡房关心我和宝宝的健康情况。因为我剖腹产伤口
+                    有点痛，还会很周到的给我红外线照灯。宝宝在月子里肠道不好每天 特别感谢日夜陪伴我们的成阿姨，非常专业负责，教了
+                    我这个新手妈妈很多育儿的知识，哄宝宝也很有一套，晚上喂奶哄睡我基本都不起来，省力很多，我也很放心交给她。</p>
+                </li>
+              </ul>
             </div>
-            <p class="t-gray">很开心的在这里度过了产后一个月的封闭式修养，庆幸选择了月子中心而不是住家月嫂。琅悦也是我看了好几家最终决定的，
-              当时也就只能看看环境和房间，因为是独栋的，比较安静，房间也是大落地窗，特地选的西南面，在冬天阳光充足，非常舒服。
-              来了之后发现服务也是非常的好，在这里每天都轮流有儿科和产科医生来巡房关心我和宝宝的健康情况。因为我剖腹产伤口
-              有点痛，还会很周到的给我红外线照灯。宝宝在月子里肠道不好每天 特别感谢日夜陪伴我们的成阿姨，非常专业负责，教了
-              我这个新手妈妈很多育儿的知识，哄宝宝也很有一套，晚上喂奶哄睡我基本都不起来，省力很多，我也很放心交给她。</p>
-          </li>
-          <li>
-            <img src="./images/detail/header-pic.png" class="t-evaluate-pic">
-            <p class="t-evaluate-name">小仙女</p>
-            <div class="g-overflow-hidden t-evaluate-level">
-              <div class="t-evaluate-self g-flex g-left t-width ">
-                <span class="t-gray">综合评分</span>
-                <div class="g-overflow-hidden">
-                  <span class="t-evaluate-star g-left"></span>
-                  <span class="t-evaluate-star g-left"></span>
-                  <span class="t-evaluate-star g-left"></span>
-                  <span class="t-evaluate-star g-left"></span>
-                  <span class="t-evaluate-star t-evaluate-star-half g-left"></span>
-                </div>
-              </div>
-              <div class="g-left t-gray t-width ">环境：满意</div>
-              <div class="g-left t-gray t-width ">护理：满意</div>
-              <div class="g-left t-gray t-width ">月子餐：非常不错</div>
-            </div>
-            <p class="t-gray">很开心的在这里度过了产后一个月的封闭式修养，庆幸选择了月子中心而不是住家月嫂。琅悦也是我看了好几家最终决定的，
-              当时也就只能看看环境和房间，因为是独栋的，比较安静，房间也是大落地窗，特地选的西南面，在冬天阳光充足，非常舒服。
-              来了之后发现服务也是非常的好，在这里每天都轮流有儿科和产科医生来巡房关心我和宝宝的健康情况。因为我剖腹产伤口
-              有点痛，还会很周到的给我红外线照灯。宝宝在月子里肠道不好每天 特别感谢日夜陪伴我们的成阿姨，非常专业负责，教了
-              我这个新手妈妈很多育儿的知识，哄宝宝也很有一套，晚上喂奶哄睡我基本都不起来，省力很多，我也很放心交给她。</p>
-          </li>
-          <li>
-            <img src="./images/detail/header-pic.png" class="t-evaluate-pic">
-            <p class="t-evaluate-name">小仙女</p>
-            <div class="g-overflow-hidden t-evaluate-level">
-              <div class="t-evaluate-self g-flex g-left t-width ">
-                <span class="t-gray">综合评分</span>
-                <div class="g-overflow-hidden">
-                  <span class="t-evaluate-star g-left"></span>
-                  <span class="t-evaluate-star g-left"></span>
-                  <span class="t-evaluate-star g-left"></span>
-                  <span class="t-evaluate-star g-left"></span>
-                  <span class="t-evaluate-star t-evaluate-star-half g-left"></span>
-                </div>
-              </div>
-              <div class="g-left t-gray t-width ">环境：满意</div>
-              <div class="g-left t-gray t-width ">护理：满意</div>
-              <div class="g-left t-gray t-width ">月子餐：非常不错</div>
-            </div>
-            <p class="t-gray">很开心的在这里度过了产后一个月的封闭式修养，庆幸选择了月子中心而不是住家月嫂。琅悦也是我看了好几家最终决定的，
-              当时也就只能看看环境和房间，因为是独栋的，比较安静，房间也是大落地窗，特地选的西南面，在冬天阳光充足，非常舒服。
-              来了之后发现服务也是非常的好，在这里每天都轮流有儿科和产科医生来巡房关心我和宝宝的健康情况。因为我剖腹产伤口
-              有点痛，还会很周到的给我红外线照灯。宝宝在月子里肠道不好每天 特别感谢日夜陪伴我们的成阿姨，非常专业负责，教了
-              我这个新手妈妈很多育儿的知识，哄宝宝也很有一套，晚上喂奶哄睡我基本都不起来，省力很多，我也很放心交给她。</p>
-          </li>
-        </ul>
-      </div>
 
-    </div>
-  </div>
-
-
-  <!-- 尾巴自己引 -->
-  <div class='footer'>
-    <div class='footer-top-box'>
-      <div class='footer-top footer-center'>
-        <div class='footer-top-text'><a href='lili-club-list.html'>月子会所</a><span class='line'>丨</span><a href='post-birth-list.html'>产后康复</a><span class='line'>丨</span><a href='maternity-matron-list.html'>月嫂服务</a><span class='line'>丨</span><a href='javascript:void(0)'>生态加盟</a></div>
-        <div class='footer-top-text'>
-          <img src='images/footer-tel.png' class='inlineblock-img' /><span class='footer-tel'>400 826
-            3635</span>
-          <img src='images/footer-address.png' class='inlineblock-img' /><span class='footer-add'>杭州市江干区创智绿谷发展中心8幢301室</span>
+          </div>
         </div>
-        <img src='images/footer-code.png' class='block-img code-img' />
+        <!-- 暂时区域结束 -->
       </div>
     </div>
-    <div class='footer-bottom-box'>
-      <div class='footer-bottom footer-center'>
-        <div class='footer-company'>浙江施俞儿实业有限公司</div>
-        <div class='footer-company-beian'>浙ICP备20003207号-1 Copyright c 2019-2020</div>
-      </div>
-    </div>
+  		<!-- off-canvas backdrop -->
+      <div class="mui-off-canvas-backdrop"></div>
   </div>
-  <!-- <ul class="right-bar">
-    <li class="g-flex g-flex-ac">
-      <div class="box">
-        <img src="./images/wechat.png" alt="">
-        微信留言
-      </div>
-    </li>
-    <li class="g-flex g-flex-ac">
-      <div class="box">
-        <img src="./images/phone.png" alt="">
-        在线客服
-      </div>
-    </li>
-    <li class="g-flex g-flex-ac" id="toTop">
-      <div class="box">
-        <img src="./images/top.png" alt="">
-        返回顶部
-      </div>
-    </li>
-  </ul> -->
-  <script>
-    $('#toTop').click(function() {
-      $("html,body").animate({
-        scrollTop: 0
-      }, 100);
-    })
+</div>
 
-  </script>
-  <!-- 尾巴自己引 -->
-  <!-- <footer>…………</footer> -->
+<!-- 尾巴 -->
+<div class="footer">
+  <div class="bottom-info font g-flex">
+    <div class="place">
+      <img src="../images/phone.png" alt="">
+      地址：杭州市江干区创智绿谷发展中心8幢301室 </div>
+    <div class="tel">
+      <img src="../images/footer-address.png" alt=""> 联系电话：400-826-3635</div>
+  </div>
+  <div class="g-text-center font">
+    浙江施俞儿实业有限公司
+  </div>
+  <div class="g-text-center font">
+浙ICP备20003207号-1 Copyright © 2019-2020
+  </div>
+	<nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="index.html">
+      <img src="./images/index-active.png" alt="">
+    </a>
+    <a class="mui-tab-item" href="#tabbar-with-chat">
+      <img src="./images/product.png" alt="">
+    </a>
+    <a class="mui-tab-item" href="#tabbar-with-contact">
+      <img src="./images/intro.png" alt="">
+    </a>
+    <a class="mui-tab-item" href="#tabbar-with-map">
+      <img src="./images/info.png" alt="">
+    </a>
+    <a class="mui-tab-item" href="#tabbar-with-map">
+      <img src="./images/contact.png" alt="">
+    </a>
+  </nav>
+</div>
+  <script src="./js/header.js"></script>
 </body>
 
 </html>
