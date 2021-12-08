@@ -3,519 +3,70 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首页</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/public.css">
-  <!-- <link rel="stylesheet" href="./css/yzhs.css"> -->
   <link rel="stylesheet" href="./css/headerFooter.css" />
+  <link rel="stylesheet" href="css/mui.min.css">
   <link rel="stylesheet" type="text/css" href="./css/index.css">
-  <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
-  <script>
-	/*@cc_on
-		document.write("<" + "link href=\"css/ie10.css\" rel=\"stylesheet\"/>")
-	@*/ 
-	</script>
 
 </head>
 
 <body>
-	<div class="swiper-container" id="pageSwiper">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<div class='header'>
-					<div class='header-content footer-center g-overflow-hidden'>
-						<img src="./images/hearder-logo.png" class="g-left block-img header-logo">
-						<div class='header-item g-left active'>
-							<a href='index.html' class='header-text'>首页</a>
-						</div>
-						<div class='header-item g-left'>
-							<a href='javascript:void(0)' class='header-text'>所有产品</a>
-						</div>
-						<div class='header-item g-left'>
-							<a href='javascript:void(0)' class='header-text'>孕物语</a>
-						</div>
-						<div class='header-item g-left '>
-							<a href='lili-club-list.html' class='header-text'>月子会所</a>
-						</div>
-						<div class='header-item g-left '>
-							<a href='post-birth-list.html' class='header-text'>产后康复</a>
-						</div>
-						<div class='header-item g-left '>
-							<a href='maternity-matron-list.html' class='header-text'>月嫂服务</a>
-						</div>
-						<div class='header-item g-left'>
-							<a href='javascript:void(0)' class='header-text'>品牌资讯</a>
-						</div>
-						<div class='header-item g-left'>
-							<a href='javascript:void(0)' class='header-text'>生态加盟</a>
-						</div>
-					</div>
+	<div>
+		<div class="mui-slider" id="slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<div class="mui-slider-item">
+					<img src="images/index/slide-img.jpg">
 				</div>
-				<div class="swiper-container" id="bannerSwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="t-index-top" style="background-image: url(./images/index/index-top.jpg)"></div>
-						</div>
-						<div class="swiper-slide">
-							<div class="t-index-top" style="background-image: url(./images/index/index-top.jpg)"></div>
-						</div>
-						<div class="swiper-slide">
-							<div class="t-index-top" style="background-image: url(./images/index/index-top.jpg)"></div>
-						</div>
-					</div>
-					<div class="swiper-button-prev t-index-banner-prev g-flex g-flex-ac g-flex-jc">
-						<img src="images/index/banner-left.png">
-					</div>
-					<div class="swiper-button-next t-index-banner-next g-flex g-flex-ac g-flex-jc">
-						<img src="images/index/banner-right.png">
-					</div>
+				<div class="mui-slider-item">
+					<img src="images/index/slide-img.jpg">
+				</div>
+				<div class="mui-slider-item">
+					<img src="images/index/slide-img.jpg">
+				</div>
+				<div class="mui-slider-item">
+					<img src="images/index/slide-img.jpg">
+				</div>
+				<div class="mui-slider-item">
+					<img src="images/index/slide-img.jpg">
+				</div>
+				<div class="mui-slider-item">
+					<img src="images/index/slide-img.jpg">
 				</div>
 			</div>
-			<div class="swiper-slide g-flex g-flex-ac g-flex-jc">
-				<div class="t-index-content-bg">
-					<video width="100%" height="100%" muted loop="loop" id="myVideo1">
-				  		<source src="https://video-qn.pic88.com/18/15/95/36g888piC6i2.mp4" type="video/mp4">
-					</video>
-				</div>
-				<div class="g-flex-y g-flex-ac g-flex-jc scale">
-					<div class="g-flex">
-						<a href="javascript:;" class="t-index-content-big-img-box g-flex g-flex-ac g-flex-jc">
-							<!-- <img src="images/index/index-content-big-img.jpg" class="t-normal-img" width="100%"> -->
-							<video width="100%" height="100%" muted controls loop="loop" id="myVideo">
-				  				<source src="https://video-qn.pic88.com/18/15/95/36g888piC6i2.mp4" type="video/mp4">
-				  			</video>
-						</a>
-						<div class="t-index-content-news-box">
-							<div class="t-index-content-news-title">品牌资讯</div>
-							<div class="t-index-news">
-								<div class="swiper-container" id="newSwiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="t-index-content-news-list">
-												<a href="javascript:;">
-													<div class="t-index-content-news-hide">
-														<img src="images/index/pro1.jpg" class="t-normal-img">
-													</div>
-													<div class="g-flex g-flex-ac">
-														<div class="t-index-content-news-info">
-															十月结晶入选十月结晶入选十月结晶入选
-														</div>
-														<img src="images/index/arrow-up.png" class="t-index-content-news-icon icon-up">
-														<img src="images/index/arrow-down.png" class="t-index-content-news-icon icon-down">
-													</div>	
-												</a>
-											</div>
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-					<div class="t-index-content-swiper">
-						<div class="swiper-container swiper-no-swiping" id="brandSwiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<a href="javascript:;" class="t-index-brand-list">
-										<div class="t-index-brand-box g-flex g-flex-ac g-flex-jc">
-											<img src="images/index/brand1.png" class="t-normal-img">
-										</div>
-										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="javascript:;" class="t-index-brand-list">
-										<div class="t-index-brand-box g-flex g-flex-ac g-flex-jc">
-											<img src="images/index/brand2.png" class="t-normal-img">
-										</div>
-										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树中国孕婴童产业联盟宝宝树</p>
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="javascript:;" class="t-index-brand-list">
-										<div class="t-index-brand-box g-flex g-flex-ac g-flex-jc">
-											<img src="images/index/brand3.png" class="t-normal-img">
-										</div>
-										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="javascript:;" class="t-index-brand-list">
-										<div class="t-index-brand-box g-flex g-flex-ac g-flex-jc">
-											<img src="images/index/brand4.png" class="t-normal-img">
-										</div>
-										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="javascript:;" class="t-index-brand-list">
-										<div class="t-index-brand-box g-flex g-flex-ac g-flex-jc">
-											<img src="images/index/brand1.png" class="t-normal-img">
-										</div>
-										<p class="t-index-brand-title">中国孕婴童产业联盟宝宝树</p>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-button-prev t-index-brand-prev g-flex g-flex-ac g-flex-jc">
-							<img src="images/index/arrow-left.png">
-						</div>
-						<div class="swiper-button-next t-index-brand-next g-flex g-flex-ac g-flex-jc">
-							<img src="images/index/arrow-right.png">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide t-index-pro-box">
-				<div class="t-index-pro-box g-flex g-flex-ac g-flex-jc scale">
-					<ul class="t-index-pro-list">
-						<li class="active g-flex g-flex-ac g-flex-jc" data-idx="0">妈妈用品</li>
-						<li class="g-flex g-flex-ac g-flex-jc" data-idx="1">宝宝用品</li>
-						<li class="g-flex g-flex-ac g-flex-jc" data-idx="2">月子产康</li>
-						<li class="g-flex g-flex-ac g-flex-jc" data-idx="3">月嫂服务</li>
-					</ul>
-					<div class="t-index-pro-img g-flex g-flex-ac g-flex-jc">
-						<div class="swiper-container" id="proSwiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<a href="javascript:;">
-										<img src="images/index/pro-big-img1.jpg" class="t-normal-img" width="100%">
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="javascript:;">
-										<img src="images/index/pro-big-img2.jpg" class="t-normal-img" width="100%">
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="javascript:;">
-										<img src="images/index/pro-big-img3.jpg" class="t-normal-img" width="100%">
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="javascript:;">
-										<img src="images/index/pro-big-img4.jpg" class="t-normal-img" width="100%">
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide t-index-footer-slide">
-				<!-- 尾巴自己引 -->
-				<div class='footer'>
-					<div class='footer-top-box'>
-						<div class='footer-top footer-center '>
-							<div class='footer-top-text'><a href='lili-club-list.html'>月子会所</a><span class='line'>丨</span><a
-									href='post-birth-list.html'>产后康复</a><span class='line'>丨</span><a
-									href='maternity-matron-list.html'>月嫂服务</a><span class='line'>丨</span><a
-									href='javascript:void(0)'>生态加盟</a></div>
-							<div class='footer-top-text'>
-								<img src='images/footer-tel.png' class='inlineblock-img' /><span class='footer-tel'>400 826
-									3635</span>
-								<img src='images/footer-address.png' class='inlineblock-img' /><span
-									class='footer-add'>杭州市江干区创智绿谷发展中心8幢301室</span>
-							</div>
-							<img src='images/footer-code.png' class='block-img code-img' />
-						</div>
-					</div>
-					<div class='footer-bottom-box'>
-						<div class='footer-bottom footer-center'>
-							<div class='footer-company'>浙江施俞儿实业有限公司</div>
-							<div class='footer-company-beian'>浙ICP备20003207号-1 Copyright c 2019-2020</div>
-						</div>
-					</div>
-				</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
 			</div>
 		</div>
+		<div class="box">
+			<div class="box-title">品牌资讯</div>
+			<div class="video">
+				<video width="100%" height="200" controls muted preload autoplay="autoplay" loop="loop" poster="images/index/mtx-1.mp4">
+					<source src="images/index/mtx-1.mp4" type="video/mp4"></source>
+					您的浏览器不支持 HTML5 video 标签。
+				</video>
+			</div>
+			
+		</div>
 	</div>
-	<ul class="right-bar">
-	    <li class="g-flex g-flex-ac">
-	      <a href='javascript:void(0)' class="box">
-	        <img src="images/wechat.png" alt="">
-	        微信留言
-	      </a>
-	    </li>
-	    <li class="g-flex g-flex-ac">
-	      <a href='javascript:void(0)' class="box">
-	        <img src="images/phone.png" alt="">
-	        在线客服
-	      </a>
-	    </li>
-	    <li class="g-flex g-flex-ac" id="toTop">
-	      <a href='javascript:void(0)' class="box">
-	        <img src="images/top.png" alt="">
-	        返回顶部
-	      </a>
-	    </li>
-	 </ul>
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
-	<script type="text/javascript" src="./js/swiper.min.js"></script>
-	<!--[if !IE]><!-->
-	<script>  
-		if (/*@cc_on!@*/false) {  
-		    $('.t-index-content-bg').addClass('ie10')
-		}  
-	</script>
-	<!--<![endif]-->  
+	<script src="js/mui.min.js"></script>
 	<script type="text/javascript">
-		
-	    var pageSwiper = new Swiper('#pageSwiper', {
-			direction : 'vertical',
-			mousewheel: true,
-			speed:800,
-			delay:3000,
-			slidesPerView: 'auto',
-			on: {
-				slideChangeTransitionStart: function(){
-					var index = this.activeIndex;
-					console.log(index)
-					if(index==1){
-						
-					}else{
-						$('#myVideo').get(0).pause();
-						$('#myVideo1').get(0).pause();
-					}
-				},
-				slideChangeTransitionEnd:function(){
-					var index = this.activeIndex;
-					if(index==1){
-						$('#myVideo').get(0).play();
-						$('#myVideo1').get(0).play();
-					}
-				}
-			}
+		mui.init({
+			swipeBack:true
 		})
-
-	    var bannerSwiper = new Swiper('#bannerSwiper',{
-			speed: 2000,
-			delay: 2000,
-			loop: true,
-			autoplay:{delay:2000},
-			navigation: {
-				nextEl: '.t-index-banner-next',
-				prevEl: '.t-index-banner-prev',
-			},
-	    })
-
-		var brandSwiper = new Swiper('#brandSwiper', {
-			slidesPerView: 4,
-			spaceBetween: 24,
-			navigation: {
-		        nextEl: '.t-index-brand-next',
-		        prevEl: '.t-index-brand-prev',
-		    },
-		    autoplay:true,
-		    loop:true
-		});
-
-		var newSwiper = new Swiper('#newSwiper',{
-			direction : 'vertical',
-			autoplay:true,
-		    loop:true,
-		    slidesPerView: 'auto',
-		})
-
-		var proSwiper = new Swiper('#proSwiper',{
-			speed:800,
-			delay:3000,
-			effect:'fade',
-			autoplay:{
-				disableOnInteraction : false,
-			},
-			on: {
-				slideChangeTransitionStart: function(){
-					var index = this.activeIndex;
-					$('.t-index-pro-list li').eq(index).addClass('active').siblings('li').removeClass('active');
-				},
-			}
-		})
-
-  	
-		$(".t-index-pro-list").on('mouseover','li',function(){
-			var idx = $(this).attr('data-idx');
-			$(this).addClass('active').siblings('li').removeClass('active');
-			proSwiper.slideTo(idx,500);
-
-		})
-
-		$(".t-index-news").on('mouseover','.t-index-content-news-list',function(){
-			$('.t-index-news .t-index-content-news-list').removeClass('active');
-			$(this).addClass('active');
-		})	
-
-		$('#toTop').click(function() {
-			pageSwiper.slideTo(0,500);
+		var slider = mui('#slider');
+		slider.slider({
+			interval:3000
 		})
 		
-
-		$('#myVideo').get(0).addEventListener('play', function (e) {//播放开始执行的函数
- 			$('#myVideo1').get(0).play();
-        });
-
-        
-        $('#myVideo').get(0).addEventListener('pause', function (e) {//暂停开始执行的函数
-        	$('#myVideo1').get(0).pause();
-        });
-
-        $('#myVideo').get(0).addEventListener('timeupdate', function (e) {//播放开始执行的函数
-        	var time1 = $('#myVideo1').get(0).currentTime;
-        	var time = $('#myVideo').get(0).currentTime;
-        	if(time - time1 > 0.5){
-        		console.log(time,time1)
-        		$('#myVideo1').get(0).currentTime = $('#myVideo').get(0).currentTime;
-        	}
-        });
-
+		
 	</script>
 </body>
 	
