@@ -8,45 +8,26 @@
   <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/headerFooter.css">
-  <link rel="stylesheet" href="../css/mui.min.css">
-  <script src="../js/mui.min.js"></script>
+  <script src="../js/jquery.js"></script>
 </head>
 
 <body>
-
-  <!-- 头 -->
-<div class="mui-off-canvas-wrap mui-draggable mui-slide-in" id="offCanvasWrapper">
-  <aside class="mui-off-canvas-left mui-transitioning">
-    <div class="mui-scroll-wrapper" id="offCanvasSideScroll" >
-      <div class="mui-scroll" style="color: #fff;">
-        <!-- 菜单具体展示内容 -->
-          <a class="header-tab-item">首页</a>
-          <a class="header-tab-item">所有产品</a>
-          <a class="header-tab-item">孕物语</a>
-          <a class="header-tab-item">月子会所</a>
-          <a class="header-tab-item">产后恢复</a>
-          <a class="header-tab-item">月嫂服务</a>
-          <a class="header-tab-item">品牌简介</a>
-          <a class="header-tab-item">品牌资讯</a>
-          <a class="header-tab-item">联系我们</a>
-      </div>
-    </div>
+  <aside class="aside g-transitioning" id="aside">
+    <a class="header-tab-item">首页</a>
+    <a class="header-tab-item">所有产品</a>
+    <a class="header-tab-item">孕物语</a>
+    <a class="header-tab-item">月子会所</a>
+    <a class="header-tab-item">产后恢复</a>
+    <a class="header-tab-item">月嫂服务</a>
+    <a class="header-tab-item">品牌简介</a>
+    <a class="header-tab-item">品牌资讯</a>
+    <a class="header-tab-item">联系我们</a>
   </aside>
-  <div class="mui-inner-wrap ">
-    <header class="mui-bar mui-bar-nav header">
+    <div class="canvas-backdrop"></div>
+    <header class="header">
       <img class="header-icon " src="../images/icon.png" id="offCanvasShow">
       <img class="header-logo " src="../images/hearder-logo.png">
     </header>
-    <div class="mui-content mui-scroll-wrapper">
-      <div class="mui-scroll">
-        <!-- 主界面具体展示内容 -->
-
-      </div>
-    </div>
-  		<!-- off-canvas backdrop -->
-      <div class="mui-off-canvas-backdrop"></div>
-  </div>
-</div>
 <script src="../js/header.js"></script>
 </body>
 
