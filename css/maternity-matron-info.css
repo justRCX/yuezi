@@ -130,20 +130,12 @@ margin-right: 10px;
   position: relative;
   margin-top: 5px;
   overflow: hidden;
-  padding-left: 40px;
+  padding-left: 14px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 
 }
 
-.t-base-info-certificate span {
-  position: absolute;
-  left: 18px;
-  font-size: 9px;
-  font-weight: normal;
-  color: #656565;
-  line-height: 14px;
-}
 
 .t-base-info-certificate-item {
   font-size: 9px;
@@ -152,12 +144,17 @@ margin-right: 10px;
   line-height: 14px;
   position: relative;
   display: block;
-  max-width: 140px;
   float: left;
-  padding: 0 3px;
 
 }
-.t-base-info-certificate-item:last-child::after{
+.t-base-info-certificate-item:last-child span{
+  display: none;
+}
+.t-base-info-certificate-item span{
+  display: inline-block;
+  margin: 0 3px;
+}
+/* .t-base-info-certificate-item:last-child::after{
   display: none;
 }
 
@@ -170,7 +167,7 @@ margin-right: 10px;
   width: 1px;
   height: 8px;
   background: #656565;
-}
+} */
 .t-left{
   padding-bottom: 5px;
 }
@@ -283,9 +280,9 @@ color: #656565;
   overflow: hidden;
 }
 .certificate span{
-  display: block;
+  /* display: block;
   float: left;
-  line-height: 14px;
+  line-height: 14px; */
 }
 
 .t-detail-info .t-appointment {

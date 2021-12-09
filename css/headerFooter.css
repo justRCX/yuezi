@@ -1,4 +1,49 @@
 /* 头部 */
+
+.aside-active{
+  z-index: 10000 !important;
+}
+.aside{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  box-sizing: content-box;
+  width: 70%;
+  min-height: 100%;
+  background: #333;
+  transform: translate3d(-300px, 0px, 0px);
+}
+.g-fullscreen{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.g-fullscreen .canvas-backdrop{
+  position: absolute;
+    z-index: 998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    transition: background 350ms cubic-bezier(.165,.84,.44,1);
+    background: rgba(0,0,0,.4);
+    box-shadow: -4px 0 4px rgb(0 0 0 / 50%), 4px 0 4px rgb(0 0 0 / 50%);
+    -webkit-tap-highlight-color: transparent;
+}
+.g-transitioning{
+  transition: transform 350ms cubic-bezier(.165,.84,.44,1);
+}
+.g-active{
+  overflow: hidden;
+  height: 100%;
+}
+
 .header {
   width: 100%;
   background-color: #F8CEC0 !important;
