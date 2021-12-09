@@ -8,16 +8,20 @@
   <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>月嫂信息</title>
   <link rel="stylesheet" href="./css/mui.min.css">
+  <link rel="stylesheet" href="./css/mui.picker.min.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/public.css">
   <link rel="stylesheet" href="./css/evaluate.css">
+  <link  rel="stylesheet" href="./css/mui.poppicker.css"/>
   <link rel="stylesheet" href="./css/list.css">
   <link rel="stylesheet" href="./css/headerFooter.css">
   <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
 	<script type="text/javascript" src="./js/swiper.min.js"></script>
   <script src="./js/mui.min.js"></script>
+  <script src="./js/mui.picker.min.js"></script>
   <script src="./js/city.js"></script>
-  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+  <script src="./js/mui.poppicker.js"></script>
+  <script src="./js/jquery.min.js">
   </script>
 
 </head>
@@ -63,13 +67,13 @@
 
     </div>
     <div class="choose g-flex">
-      <div class="choose-item">
+      <div class="choose-item" data-type = 0>
         省份
       </div>
-      <div class="choose-item">
+      <div class="choose-item" data-type = 1>
         城市
       </div>
-      <div class="choose-item">
+      <div class="choose-item"  data-type = 2>
         请选择阿姨
       </div>
     </div>
@@ -151,6 +155,7 @@
 </nav>
   <script src="./js/header.js"></script>
   <script>
+    let chooseArea = {};
     var swiper1 = new Swiper('#swiper',{
       autoplay:true,
       pagination: {
@@ -158,7 +163,21 @@
       },
     });
     $(".choose-item").on('click',function(event){
-      console.log(event);
+      var _this = $(this);
+      var currentType = $(this).data('type');
+      // 0 身份
+      // 1 城市
+      // 2 阿姨
+      console.log(currentType)
+      var picker = new mui.PopPicker();
+      let data = currentType == 0 ? cityData :( currentType == 1 ? chooseArea.children : [{value:'',text:'阿姨'}]);
+      picker.setData(data);
+      picker.show(function (selectItems) {
+        if(currentType == 0){
+          chooseArea = selectItems[0];
+        }
+        _this.text(selectItems[0].text)
+  })
 })
 
   </script>
