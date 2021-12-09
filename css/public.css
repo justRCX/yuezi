@@ -32,6 +32,12 @@ a:hover{
 
 }
 
+.g-flex-jc-sb{
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+
 .g-center {
   width: 100%;
   margin: 0 auto;
