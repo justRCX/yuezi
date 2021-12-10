@@ -12,6 +12,10 @@ a:hover{
   display: -webkit-flex;
   display: flex;
 }
+.g-flex-1{
+  flex: 1;
+  -webkit-flex:1;
+}
 
 .g-flex-ac {
   -ms-flex-align: center;
@@ -20,6 +24,10 @@ a:hover{
   box-align: center;
   -moz-box-align: center;
   -webkit-box-align: center;
+}
+.g-flex-ai-fe{
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
 }
 
 .g-flex-jc {

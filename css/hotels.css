@@ -1,0 +1,112 @@
+html,body{
+	height: 100%;
+	background: #f6f7f9;
+	max-width: 640px;
+	margin: 0 auto;
+	line-height: inherit;
+}
+.top-box{
+	width: 7.5rem;
+	height: 4rem;
+	background: #fff;
+	position: relative;
+}
+.top-pic{
+	width: 7.5rem;
+	height: 4rem;
+}
+.vr-pic{
+	width: 0.29rem;
+	height: 0.17rem;
+	margin-right: 0.1rem;
+}
+.open-pic{
+	width: 0.24rem;
+	height: 0.24rem;
+	position: absolute;
+	right: 0.24rem;
+	bottom: 0.4rem;
+	z-index: 10
+}
+.top-tip{
+	font-size: 0.28rem;
+	color: #fff;
+	font-weight: 500;
+	position: absolute;
+	right: 0.24rem;
+	top: 0.2rem;
+}
+.container{
+	border-bottom: 1px solid #DDDDDD;
+	margin-bottom: 0.4rem;
+}
+.content{
+	margin: 0.4rem 0.24rem;
+	background: #fff;
+	padding: 0 0.2rem;
+	background: #fff;
+	
+}
+.info-list{
+	border-bottom: 1px solid #DDDDDD;
+	padding: 0.3rem 0;
+}
+.info-list:nth-last-child(1){
+	border: none;
+}
+.title{
+	font-size: 0.34rem;
+	color: #282828;
+	margin-bottom: 0.2rem;
+	font-weight: bold;
+}
+.title-sub{
+	font-size: 0.26rem;
+	color: #282828;
+	font-weight: bold;
+	margin-bottom: 0.1rem;
+	margin-top: 0.2rem;
+}
+.address{
+	font-size: 0.2rem;
+	color: #989898;
+	line-height: 0.4rem;
+}
+.phone{
+	font-size: 0.2rem;
+	color: #989898;
+}
+.call-btn{
+	width: 1.4rem;
+	height: 0.4rem;
+	background: #DFA25A;
+	border-radius: 0.06rem;
+	color: #fff;
+	font-size: 0.24rem;
+	line-height: 0.4rem;
+	text-align: center;
+}
+.info{
+	color: #282828;
+	font-size: 0.22rem;
+	line-height: 0.4rem;
+}
+.info-pic1{
+	width: 4.04rem;
+	height: 3rem;
+	border-radius: 0.1rem;
+	overflow: hidden;
+	margin-top: 0.3rem;
+}
+.info-pic2{
+	width: 2.4rem;
+	height: 3rem;
+	border-radius: 0.1rem;
+	overflow: hidden;
+	margin-top: 0.3rem;
+}
+.star-pic{
+	width: 0.18rem;
+	height: 0.17rem;
+	margin-right: 0.05rem;
+}
