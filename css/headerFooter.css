@@ -88,10 +88,12 @@ color: #666666;
 .bottom-info img{
   width: 8px;
   margin-right: 4px;
+  vertical-align:text-bottom;
 }
 .tel{
   margin-left: 10px;
 }
 .footer{
   padding-bottom: 50px;
+  padding-top: 20px;
 }

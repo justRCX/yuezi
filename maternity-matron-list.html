@@ -121,11 +121,11 @@
         <div class="footer">
           <div class="bottom-info font g-flex">
             <div class="place">
-              <img src="../images/phone.png" alt="">
+              <img src="./images/phone.png" alt="">
               地址：杭州市江干区创智绿谷发展中心8幢301室
              </div>
             <div class="tel">
-              <img src="../images/footer-address.png" alt=""> 联系电话：400-826-3635
+              <img src="./images/footer-address.png" alt=""> 联系电话：400-826-3635
             </div>
           </div>
           <div class="g-text-center font">
@@ -168,7 +168,10 @@
       // 0 身份
       // 1 城市
       // 2 阿姨
-      console.log(currentType)
+      if(!chooseArea.children && currentType == 1){
+        mui.alert('请先选择省')
+        return
+      }
       var picker = new mui.PopPicker();
       let data = currentType == 0 ? cityData :( currentType == 1 ? chooseArea.children : [{value:'',text:'阿姨'}]);
       picker.setData(data);

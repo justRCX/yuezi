@@ -1,9 +1,10 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-a:hover{
-	color:blue !important;
-	transition:all 0.5s ease-in
+a:active{
+  color: inherit;
+	/* color:blue !important;
+	transition:all 0.5s ease-in */
 }
 .g-flex {
   display: -moz-box;
@@ -61,4 +62,31 @@ a:hover{
 
 .g-text-center{
   text-align: center;
+}
+.mui-btn-blue{
+  background-color: #DFA25A !important;
+  border: none !important;
+
+}
+
+.get-now{
+  display: block;
+  margin: 0 12px;
+  background: #DFA25A;
+border-radius: 3px;
+height: 40px;
+line-height: 40px;
+font-size: 12px;
+font-weight: 400;
+color: #FFFFFF;
+text-align: center;
+margin-bottom: 30px;
+margin-top: 10px;
+}
+.get-now:active{
+  color: #fff;
+}
+.mui-popup-button{
+  color: #DFA25A  !important;
+  font-size: 14px !important;
 }
