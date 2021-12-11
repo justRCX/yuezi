@@ -5,6 +5,9 @@
   border-bottom: 1px solid #dddd;
   border-radius: 6px;
 }
+#swiper{
+  height: 80px;
+}
 
 .g-center {
   position: relative;
