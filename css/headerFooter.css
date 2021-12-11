@@ -69,6 +69,9 @@
   margin-left: 12px;
 
 }
+.header-tab-item:active{
+  color: #fff;
+}
 .foot-bar{
   position: fixed;
     z-index: 10;
