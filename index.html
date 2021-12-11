@@ -6,67 +6,250 @@
   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首页</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/public.css">
-  <link rel="stylesheet" href="./css/headerFooter.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/headerFooter.css" />
   <link rel="stylesheet" href="css/mui.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 
 </head>
 
 <body>
+	<aside class="aside g-transitioning" id="aside">
+		<a class="header-tab-item">首页</a>
+		<a class="header-tab-item">所有产品</a>
+		<a class="header-tab-item">孕物语</a>
+		<a class="header-tab-item">月子会所</a>
+		<a class="header-tab-item">产后恢复</a>
+		<a class="header-tab-item">月嫂服务</a>
+		<a class="header-tab-item">品牌简介</a>
+		<a class="header-tab-item">品牌资讯</a>
+		<a class="header-tab-item">联系我们</a>
+	</aside>
+	<div class="canvas-backdrop"></div>
+	<header class="header">
+	  <img class="header-icon " src="./images/icon.png" id="offCanvasShow">
+	  <img class="header-logo " src="./images/hearder-logo.png">
+	</header>
 	<div>
-		<div class="mui-slider" id="slider">
-			<div class="mui-slider-group mui-slider-loop">
-				<div class="mui-slider-item">
-					<img src="images/index/slide-img.jpg">
+		<div class="swiper-container" id="bannerSwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/index/slide-img.jpg" class="banner-pic">
 				</div>
-				<div class="mui-slider-item">
-					<img src="images/index/slide-img.jpg">
+				<div class="swiper-slide">
+					<img src="images/index/slide-img.jpg" class="banner-pic">
 				</div>
-				<div class="mui-slider-item">
-					<img src="images/index/slide-img.jpg">
+				<div class="swiper-slide">
+					<img src="images/index/slide-img.jpg" class="banner-pic">
 				</div>
-				<div class="mui-slider-item">
-					<img src="images/index/slide-img.jpg">
-				</div>
-				<div class="mui-slider-item">
-					<img src="images/index/slide-img.jpg">
-				</div>
-				<div class="mui-slider-item">
-					<img src="images/index/slide-img.jpg">
+				<div class="swiper-slide">
+					<img src="images/index/slide-img.jpg" class="banner-pic">
 				</div>
 			</div>
-			<div class="mui-slider-indicator">
-				<div class="mui-indicator mui-active"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-			</div>
+			<div class="swiper-pagination"></div>
 		</div>
 		<div class="box">
 			<div class="box-title">品牌资讯</div>
 			<div class="video">
-				<video width="100%" height="200" controls muted preload autoplay="autoplay" loop="loop" poster="images/index/mtx-1.mp4">
+				<video width="100%" height="100%" controls muted preload autoplay="autoplay" loop="loop" poster="images/index/mtx-1.mp4">
 					<source src="images/index/mtx-1.mp4" type="video/mp4"></source>
 					您的浏览器不支持 HTML5 video 标签。
 				</video>
 			</div>
-			
+			<div class="g-flex g-flex-jc-sb news-box">
+				<div class="new-swiper">
+					<div class="swiper-container" id="newSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="images/index/new-pic.jpg" class="new-pic">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="images/index/slide-img.jpg" class="new-pic">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="images/index/new-pic.jpg" class="new-pic">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news-info">
+					<div class="new-info g-flex g-flex-ac g-flex-jc active">共同防“疫”,十月结晶</div>
+					<div class="new-info g-flex g-flex-ac g-flex-jc">联袂孵化品牌-鹿小吾</div>
+					<div class="new-info g-flex g-flex-ac g-flex-jc">十月结晶再登育儿网</div>
+				</div>
+			</div>
+		</div>
+		<div class="brand-swiper">
+			<div class="swiper-container" id="brandSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/index/brand-pic.jpg" class="brand-pic">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/index/brand-pic.jpg" class="brand-pic">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/index/brand-pic.jpg" class="brand-pic">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/index/brand-pic.jpg" class="brand-pic">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/index/brand-pic.jpg" class="brand-pic">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="images/index/brand-pic.jpg" class="brand-pic">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="type-title">
+				<p class="type-name active">妈妈用品</p> / 
+				<p class="type-name">宝宝用品</p> / 
+				<p class="type-name">月子产康</p> / 
+				<p class="type-name">月子服务</p>
+			</div>
+			<div class="type-swiper">
+				<div class="swiper-container swiper-no-swiping" id="typeSwiper">
+					<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="images/index/type-pic.jpg" class="type-pic"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/index/slide-img.jpg" class="type-pic"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/index/new-pic.jpg" class="type-pic"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/index/slide-img.jpg" class="type-pic"></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-code">
+			<img src="images/index/code.jpg" class="code-pic">
 		</div>
 	</div>
-	<script type="text/javascript" src="./js/jquery.min.js"></script>
-	<script src="js/mui.min.js"></script>
+	<div class="footer">
+	  <div class="bottom-info font g-flex">
+	    <div class="place">
+	      <img src="../images/phone.png" alt="">
+	      地址：杭州市江干区创智绿谷发展中心8幢301室 </div>
+	    <div class="tel">
+	      <img src="../images/footer-address.png" alt=""> 联系电话：400-826-3635</div>
+	  </div>
+	  <div class="g-text-center font">
+	    浙江施俞儿实业有限公司
+	  </div>
+	  <div class="g-text-center font">
+	浙ICP备20003207号-1 Copyright © 2019-2020
+	  </div>
+		<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" href="index.html">
+	      <img src="../images/index-active.png" alt="">
+	    </a>
+	    <a class="mui-tab-item" href="#tabbar-with-chat">
+	      <img src="../images/product.png" alt="">
+	    </a>
+	    <a class="mui-tab-item" href="brand-center.html">
+	      <img src="../images/intro.png" alt="">
+	    </a>
+	    <a class="mui-tab-item" href="#tabbar-with-map">
+	      <img src="../images/info.png" alt="">
+	    </a>
+	    <a class="mui-tab-item" href="#tabbar-with-map">
+	      <img src="../images/contact.png" alt="">
+	    </a>
+	  </nav>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/flexible.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script src="./js/header.js"></script>
 	<script type="text/javascript">
-		mui.init({
-			swipeBack:true
+		var bannerSwiper = new Swiper('#bannerSwiper',{
+			autoplay: {
+				delay:3000,
+				disableOnInteraction: false,
+			},
+			loop : true,
+			autoplayDisableOnInteraction:false,
+			pagination: {
+				el: '.swiper-pagination',
+			},
 		})
-		var slider = mui('#slider');
-		slider.slider({
-			interval:3000
+
+		var length = $('#newSwiper .swiper-slide').length;
+		var newSwiper = new Swiper('#newSwiper',{
+			autoplay: {
+				delay:3000,
+				disableOnInteraction: false,
+			},
+			speed: 1000,
+			loop : true,
+			effect : 'fade',
+			autoplayDisableOnInteraction:false,
+			on: {
+				slideChange: function (e) {
+					var index = (this.activeIndex - 1) % length
+			    	$('.new-info').removeClass('active').eq(index).addClass('active');
+				},
+			},
 		})
+
+		$('.new-info').on('click',function(){
+			$(this).addClass('active').siblings('.new-info').removeClass('active');
+			var index = $(this).index();
+			newSwiper.slideToLoop(index)
+		})
+
+
+		var brandSwiper = new Swiper('#brandSwiper',{
+			autoplay: {
+				disableOnInteraction: false,
+			},
+			loop : true,
+			slidesPerView: "auto",
+			spaceBetween: 10,
+			freeMode: true,
+		})
+
+		var typeSwiper = new Swiper('#typeSwiper',{
+			effect : 'fade',
+		})
+
+		$('.type-name').on('click',function(){
+			$(this).addClass('active').siblings('.type-name').removeClass('active');
+			var index = $(this).index();
+			typeSwiper.slideTo(index)
+		})
+
 		
-		
+
+
 	</script>
 </body>
 	
