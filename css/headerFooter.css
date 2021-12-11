@@ -69,7 +69,33 @@
   margin-left: 12px;
 
 }
-.mui-tab-item,.mui-tab-item img{
+.foot-bar{
+  position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    background-color: #f7f7f7;
+    bottom: 0;
+    display: table;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    table-layout: fixed;
+    border-top: 0;
+    border-bottom: 0;
+}
+.foot-tab-item{
+  display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+}
+.foot-tab-item,.foot-tab-item img{
   height: 30px !important;
 }
 
