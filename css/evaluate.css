@@ -47,10 +47,19 @@ padding-left: 23px;
 }
 
 .t-evaluate li .t-evaluate-pic {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.t-evaluate li .t-evaluate-pic img{
+  display: block;
   width: 20px;
   height: 20px;
 }
