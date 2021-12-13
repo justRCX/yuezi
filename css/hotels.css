@@ -20,6 +20,17 @@ html,body{
 	height: 0.17rem;
 	margin-right: 0.1rem;
 }
+.swiper-pagination-bullet{
+	width: 0.08rem;
+	height: 0.08rem;
+	background: #fff;
+	opacity: 1;
+	margin:0 0.05rem!important;
+}
+.swiper-pagination-bullet-active{
+	width: 0.28rem;
+	border-radius: 0.04rem;
+}
 .open-pic{
 	width: 0.24rem;
 	height: 0.24rem;
