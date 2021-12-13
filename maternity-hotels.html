@@ -34,15 +34,31 @@
 	</header>
 	<div class="container">
 		<div class="top-box">
-			<a href="#">
-				<img src="images/hotels/top-pic.jpg" class="top-pic">
-			</a>
+			<div class="swiper-container" id="bannerSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/hotels/top-pic.jpg" class="top-pic">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/hotels/top-pic.jpg" class="top-pic">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/hotels/top-pic.jpg" class="top-pic">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/hotels/top-pic.jpg" class="top-pic">
+					</div>
+				</div>
+			</div>
 			<div class="top-tip g-flex g-flex-ac">
 				<img src="images/hotels/vr.png" class="vr-pic">
 				720°全景在线观看
 			</div>
 			<img src="images/hotels/open.png" class="open-pic">
 		</div>
+
+
+
 		<div class="content">
 			<div class="info-list">
 				<div class="title">十月结晶·逸庭月子会所(上海旗舰店)</div>
@@ -118,6 +134,16 @@
 	<script type="text/javascript" src="js/flexible.js"></script>
 	<script type="text/javascript" src="js/swiper.min.js"></script>
 	<script src="js/header.js"></script>
+	<script type="text/javascript">
+		var bannerSwiper = new Swiper('#bannerSwiper',{
+			autoplay: {
+				delay:3000,
+				disableOnInteraction: false,
+			},
+			loop : true,
+			autoplayDisableOnInteraction:false,
+		})
+	</script>
 </body>
 
 </html>
