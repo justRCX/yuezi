@@ -42,21 +42,18 @@ img, a img {
 	line-height: 0.4rem;
 	border-bottom: 1px solid #DDDDDD;
 }
-.content b,.content strong {
-    color: #624C3F;
-}
-.content .row {
+ul{
     text-align: center;
     display: flex;
 }
-.content .row li {
+li {
 	flex:1;
     width: auto;
     margin: 0 1%;
     float: none;
     display: inline-block;
 }
-.content .row li p{
+p{
 	font-size: 0.18rem;
 	color: #656565
 }
