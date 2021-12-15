@@ -41,6 +41,8 @@ text-align: justify;
 }
 .info-detail img{
   max-width: 100% !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .pagination{
 font-size: 13px;
