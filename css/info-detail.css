@@ -33,6 +33,15 @@ display: block;
 }
 .info-detail{
   margin: 0 12px;
+  font-size: 12px;
+font-weight: 400;
+color: #656565;
+line-height: 17px;
+text-indent: 2em;
+text-align: justify;
+}
+.info-detail img{
+  max-width: 100% !important;
 }
 .pagination{
 font-size: 13px;
